@@ -1,0 +1,3395 @@
+{
+    "@context": {
+        "ceds": "http://desmsolutions.org/ns/ceds/",
+        "credReg": "http://desmsolutions.org/ns/credReg/",
+        "dct": "http://purl.org/dc/terms/",
+        "dcterms": "http://purl.org/dc/terms/",
+        "desm": "http://desmsolutions.org/ns/",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "sdo": "http://schema.org/",
+        "xsd": "http://www.w3.org/2001/XMLSchema#"
+    },
+    "@graph": [
+        {
+            "@id": "http://desmsolutions.org/TermMapping/165",
+            "@type": "desm:AbstractClassMapping",
+            "dcterms:created": "2023-03-10",
+            "dcterms:dateModified": "2023-03-10",
+            "dcterms:title": "Joe CR Demo - CredReg - Competency",
+            "dcterms:description": "",
+            "desm:abstractClassMapped": {
+                "@id": "https://swan.desm.staging.c66.me/resources/abstract-classes/Competency"
+            },
+            "dcterms:hasPart": [
+                {
+                    "@id": "https://swan.desm.staging.c66.me/resources/terms/Align+From"
+                },
+                {
+                    "@id": "https://swan.desm.staging.c66.me/resources/terms/Align+To"
+                },
+                {
+                    "@id": "https://swan.desm.staging.c66.me/resources/terms/Author"
+                },
+                {
+                    "@id": "https://swan.desm.staging.c66.me/resources/terms/Concept+Keyword"
+                }, {
+                    "@id": "https://swan.desm.staging.c66.me/resources/terms/Concept+Term"
+                }, {
+                    "@id": "https://swan.desm.staging.c66.me/resources/terms/Creator"
+                }, {
+                    "@id": "https://swan.desm.staging.c66.me/resources/terms/Date+Created"
+                }, {
+                    "@id": "https://swan.desm.staging.c66.me/resources/terms/Date+Modified"
+                }, {
+                    "@id": "https://swan.desm.staging.c66.me/resources/terms/Derived+From"
+                }, {
+                    "@id": "https://swan.desm.staging.c66.me/resources/terms/Education+Level+Type"
+                }, {
+                    "@id": "https://swan.desm.staging.c66.me/resources/terms/Identifier"
+                }, {
+                    "@id": "https://swan.desm.staging.c66.me/resources/terms/In+Language"
+                }, {
+                    "@id": "https://swan.desm.staging.c66.me/resources/terms/License"
+                }, {
+                    "@id": "https://swan.desm.staging.c66.me/resources/terms/Local+Subject"
+                }, {
+                    "@id": "https://swan.desm.staging.c66.me/resources/terms/CTID"
+                }, {
+                    "@id": "https://swan.desm.staging.c66.me/resources/terms/Industry+Type"
+                }, {
+                    "@id": "https://swan.desm.staging.c66.me/resources/terms/Instructional+Program+Type"
+                }, {
+                    "@id": "https://swan.desm.staging.c66.me/resources/terms/Occupation+Type"
+                }, {
+                    "@id": "https://swan.desm.staging.c66.me/resources/terms/Has+Progression+Level"
+                }, {
+                    "@id": "https://swan.desm.staging.c66.me/resources/terms/Ability+Embodied"
+                }, {
+                    "@id": "https://swan.desm.staging.c66.me/resources/terms/Alternative+Coded+Notation"
+                }, {
+                    "@id": "https://swan.desm.staging.c66.me/resources/terms/Broad+Alignment"
+                }, {
+                    "@id": "https://swan.desm.staging.c66.me/resources/terms/Coded+Notation"
+                }, {
+                    "@id": "https://swan.desm.staging.c66.me/resources/terms/Comment"
+                }, {
+                    "@id": "https://swan.desm.staging.c66.me/resources/terms/Competency+Category"
+                }, {
+                    "@id": "https://swan.desm.staging.c66.me/resources/terms/Competency+Label"
+                }, {
+                    "@id": "https://swan.desm.staging.c66.me/resources/terms/Competency+Text"
+                }, {
+                    "@id": "https://swan.desm.staging.c66.me/resources/terms/Complexity+Level"
+                }, {
+                    "@id": "https://swan.desm.staging.c66.me/resources/terms/Comprised+Of"
+                }, {
+                    "@id": "https://swan.desm.staging.c66.me/resources/terms/Cross-Subject+Reference"
+                }, {
+                    "@id": "https://swan.desm.staging.c66.me/resources/terms/Exact+Alignment"
+                }, {
+                    "@id": "https://swan.desm.staging.c66.me/resources/terms/Has+Child"
+                }, {
+                    "@id": "https://swan.desm.staging.c66.me/resources/terms/Inferred+Competency"
+                }, {
+                    "@id": "https://swan.desm.staging.c66.me/resources/terms/Is+Child+Of"
+                }, {
+                    "@id": "https://swan.desm.staging.c66.me/resources/terms/Is+Part+Of"
+                }, {
+                    "@id": "https://swan.desm.staging.c66.me/resources/terms/Is+Top+Child+Of"
+                }, {
+                    "@id": "https://swan.desm.staging.c66.me/resources/terms/Is+Version+Of"
+                }, {
+                    "@id": "https://swan.desm.staging.c66.me/resources/terms/Knowledge+Embodied"
+                }, {
+                    "@id": "https://swan.desm.staging.c66.me/resources/terms/List+ID"
+                }, {
+                    "@id": "https://swan.desm.staging.c66.me/resources/terms/Major+Alignment"
+                }, {
+                    "@id": "https://swan.desm.staging.c66.me/resources/terms/Minor+Alignment"
+                }, {
+                    "@id": "https://swan.desm.staging.c66.me/resources/terms/Narrow+Alignment"
+                }, {
+                    "@id": "https://swan.desm.staging.c66.me/resources/terms/Prerequisite+Alignment"
+                }, {
+                    "@id": "https://swan.desm.staging.c66.me/resources/terms/Should+Index"
+                }, {
+                    "@id": "https://swan.desm.staging.c66.me/resources/terms/Skill+Embodied"
+                }, {
+                    "@id": "https://swan.desm.staging.c66.me/resources/terms/Source+Documentation"
+                }, {
+                    "@id": "https://swan.desm.staging.c66.me/resources/terms/Substantiating+Competency+Framework"
+                }, {
+                    "@id": "https://swan.desm.staging.c66.me/resources/terms/Substantiating+Credential"
+                }, {
+                    "@id": "https://swan.desm.staging.c66.me/resources/terms/Substantiating+Job"
+                }, {
+                    "@id": "https://swan.desm.staging.c66.me/resources/terms/Substantiating+Occupation"
+                }, {
+                    "@id": "https://swan.desm.staging.c66.me/resources/terms/Substantiating+Organization"
+                }, {
+                    "@id": "https://swan.desm.staging.c66.me/resources/terms/Substantiating+Resource"
+                }, {
+                    "@id": "https://swan.desm.staging.c66.me/resources/terms/Substantiating+Task"
+                }, {
+                    "@id": "https://swan.desm.staging.c66.me/resources/terms/Substantiating+Work+Role"
+                }, {
+                    "@id": "https://swan.desm.staging.c66.me/resources/terms/Task+Embodied"
+                }, {
+                    "@id": "https://swan.desm.staging.c66.me/resources/terms/Weight"
+                }
+            ]
+        },
+        {
+            "@id": "http://desmsolutions.org/TermMapping/2174",
+            "@type": "desm:TermMapping",
+            "dcterms:isPartOf": {
+                "@id": "http://desmsolutions.org/TermMapping/165"
+            },
+            "desm:comment": null,
+            "desm:mappedterm": [
+                {
+                    "@id": "https://swan.desm.staging.c66.me/resources/terms/Align+From"
+                }
+            ],
+            "desm:mappingPredicate": {
+                "@id": "https://swan.desm.staging.c66.me/resources/predicates/Identical"
+            },
+            "desm:spineTerm": {
+                "@id": "https://swan.desm.staging.c66.me/resources/terms/Align+From"
+            }
+        },
+        {
+            "@id": "ceasn:alignFrom",
+            "@type": "rdf:Property",
+            "desm:sourceURI": {
+                "@id": "ceasn:alignFrom"
+            },
+            "rdfs:subPropertyOf": {
+                "@id": null
+            },
+            "desm:valueSpace": {
+                "@id": null
+            },
+            "rdfs:label": "Align From",
+            "rdfs:comment": "A competency framework or competency from which this competency framework or competency is aligned.",
+            "rdfs:domain": {
+                "@id": "ceasn:Competency"
+            },
+            "rdfs:range": {
+                "@id": "ceasn:Competency"
+            }
+        },
+        {
+            "@id": "ceasn:alignFrom",
+            "@type": "rdf:Property",
+            "desm:sourceURI": {
+                "@id": "ceasn:alignFrom"
+            },
+            "rdfs:subPropertyOf": {
+                "@id": null
+            },
+            "desm:valueSpace": {
+                "@id": null
+            },
+            "rdfs:label": "Align From",
+            "rdfs:comment": "A competency framework or competency from which this competency framework or competency is aligned.",
+            "rdfs:domain": {
+                "@id": "ceasn:Competency"
+            },
+            "rdfs:range": {
+                "@id": "ceasn:Competency"
+            }
+        }, {
+            "@id": "http://desmsolutions.org/TermMapping/2175",
+            "@type": "desm:TermMapping",
+            "dcterms:isPartOf": {
+                "@id": "http://desmsolutions.org/TermMapping/165"
+            },
+            "desm:comment": null,
+            "desm:mappedterm": [
+                {
+                    "@id": "https://swan.desm.staging.c66.me/resources/terms/Align+To"
+                }
+            ],
+            "desm:mappingPredicate": {
+                "@id": "https://swan.desm.staging.c66.me/resources/predicates/Identical"
+            },
+            "desm:spineTerm": {
+                "@id": "https://swan.desm.staging.c66.me/resources/terms/Align+To"
+            }
+        }, {
+            "@id": "ceasn:alignTo",
+            "@type": "rdf:Property",
+            "desm:sourceURI": {
+                "@id": "ceasn:alignTo"
+            },
+            "rdfs:subPropertyOf": {
+                "@id": null
+            },
+            "desm:valueSpace": {
+                "@id": null
+            },
+            "rdfs:label": "Align To",
+            "rdfs:comment": "A competency framework or competency to which this competency framework or competency is aligned.",
+            "rdfs:domain": {
+                "@id": "ceasn:Competency"
+            },
+            "rdfs:range": {
+                "@id": "ceasn:Competency"
+            }
+        }, {
+            "@id": "ceasn:alignTo",
+            "@type": "rdf:Property",
+            "desm:sourceURI": {
+                "@id": "ceasn:alignTo"
+            },
+            "rdfs:subPropertyOf": {
+                "@id": null
+            },
+            "desm:valueSpace": {
+                "@id": null
+            },
+            "rdfs:label": "Align To",
+            "rdfs:comment": "A competency framework or competency to which this competency framework or competency is aligned.",
+            "rdfs:domain": {
+                "@id": "ceasn:Competency"
+            },
+            "rdfs:range": {
+                "@id": "ceasn:Competency"
+            }
+        }, {
+            "@id": "http://desmsolutions.org/TermMapping/2176",
+            "@type": "desm:TermMapping",
+            "dcterms:isPartOf": {
+                "@id": "http://desmsolutions.org/TermMapping/165"
+            },
+            "desm:comment": null,
+            "desm:mappedterm": [
+                {
+                    "@id": "https://swan.desm.staging.c66.me/resources/terms/Author"
+                }
+            ],
+            "desm:mappingPredicate": {
+                "@id": "https://swan.desm.staging.c66.me/resources/predicates/Identical"
+            },
+            "desm:spineTerm": {
+                "@id": "https://swan.desm.staging.c66.me/resources/terms/Author"
+            }
+        }, {
+            "@id": "ceasn:author",
+            "@type": "rdf:Property",
+            "desm:sourceURI": {
+                "@id": "ceasn:author"
+            },
+            "rdfs:subPropertyOf": {
+                "@id": "dct:contributor"
+            },
+            "desm:valueSpace": {
+                "@id": null
+            },
+            "rdfs:label": "Author",
+            "rdfs:comment": "A person or organization chiefly responsible for the intellectual or artistic content of this competency framework or competency.",
+            "rdfs:domain": {
+                "@id": "ceasn:Collection"
+            },
+            "rdfs:range": {
+                "@id": "xsd:string"
+            }
+        }, {
+            "@id": "ceasn:author",
+            "@type": "rdf:Property",
+            "desm:sourceURI": {
+                "@id": "ceasn:author"
+            },
+            "rdfs:subPropertyOf": {
+                "@id": "dct:contributor"
+            },
+            "desm:valueSpace": {
+                "@id": null
+            },
+            "rdfs:label": "Author",
+            "rdfs:comment": "A person or organization chiefly responsible for the intellectual or artistic content of this competency framework or competency.",
+            "rdfs:domain": {
+                "@id": "ceasn:Collection"
+            },
+            "rdfs:range": {
+                "@id": "xsd:string"
+            }
+        }, {
+            "@id": "http://desmsolutions.org/TermMapping/2177",
+            "@type": "desm:TermMapping",
+            "dcterms:isPartOf": {
+                "@id": "http://desmsolutions.org/TermMapping/165"
+            },
+            "desm:comment": null,
+            "desm:mappedterm": [
+                {
+                    "@id": "https://swan.desm.staging.c66.me/resources/terms/Concept+Keyword"
+                }
+            ],
+            "desm:mappingPredicate": {
+                "@id": "https://swan.desm.staging.c66.me/resources/predicates/Identical"
+            },
+            "desm:spineTerm": {
+                "@id": "https://swan.desm.staging.c66.me/resources/terms/Concept+Keyword"
+            }
+        }, {
+            "@id": "ceasn:conceptKeyword",
+            "@type": "rdf:Property",
+            "desm:sourceURI": {
+                "@id": "ceasn:conceptKeyword"
+            },
+            "rdfs:subPropertyOf": {
+                "@id": "dct:subject"
+            },
+            "desm:valueSpace": {
+                "@id": null
+            },
+            "rdfs:label": "Concept Keyword",
+            "rdfs:comment": "A word or phrase used by the promulgating agency to refine and differentiate individual resources contextually.",
+            "rdfs:domain": {
+                "@id": "ceasn:Collection"
+            },
+            "rdfs:range": {
+                "@id": "rdf:langString"
+            }
+        }, {
+            "@id": "ceasn:conceptKeyword",
+            "@type": "rdf:Property",
+            "desm:sourceURI": {
+                "@id": "ceasn:conceptKeyword"
+            },
+            "rdfs:subPropertyOf": {
+                "@id": "dct:subject"
+            },
+            "desm:valueSpace": {
+                "@id": null
+            },
+            "rdfs:label": "Concept Keyword",
+            "rdfs:comment": "A word or phrase used by the promulgating agency to refine and differentiate individual resources contextually.",
+            "rdfs:domain": {
+                "@id": "ceasn:Collection"
+            },
+            "rdfs:range": {
+                "@id": "rdf:langString"
+            }
+        }, {
+            "@id": "http://desmsolutions.org/TermMapping/2178",
+            "@type": "desm:TermMapping",
+            "dcterms:isPartOf": {
+                "@id": "http://desmsolutions.org/TermMapping/165"
+            },
+            "desm:comment": null,
+            "desm:mappedterm": [
+                {
+                    "@id": "https://swan.desm.staging.c66.me/resources/terms/Concept+Term"
+                }
+            ],
+            "desm:mappingPredicate": {
+                "@id": "https://swan.desm.staging.c66.me/resources/predicates/Identical"
+            },
+            "desm:spineTerm": {
+                "@id": "https://swan.desm.staging.c66.me/resources/terms/Concept+Term"
+            }
+        }, {
+            "@id": "ceasn:conceptTerm",
+            "@type": "rdf:Property",
+            "desm:sourceURI": {
+                "@id": "ceasn:conceptTerm"
+            },
+            "rdfs:subPropertyOf": {
+                "@id": "dct:subject"
+            },
+            "desm:valueSpace": {
+                "@id": null
+            },
+            "rdfs:label": "Concept Term",
+            "rdfs:comment": "A term drawn from a controlled vocabulary used by the promulgating agency to refine and differentiate individual resources contextually.",
+            "rdfs:domain": {
+                "@id": "ceasn:Competency"
+            },
+            "rdfs:range": {
+                "@id": "skos:Concept"
+            }
+        }, {
+            "@id": "ceasn:conceptTerm",
+            "@type": "rdf:Property",
+            "desm:sourceURI": {
+                "@id": "ceasn:conceptTerm"
+            },
+            "rdfs:subPropertyOf": {
+                "@id": "dct:subject"
+            },
+            "desm:valueSpace": {
+                "@id": null
+            },
+            "rdfs:label": "Concept Term",
+            "rdfs:comment": "A term drawn from a controlled vocabulary used by the promulgating agency to refine and differentiate individual resources contextually.",
+            "rdfs:domain": {
+                "@id": "ceasn:Competency"
+            },
+            "rdfs:range": {
+                "@id": "skos:Concept"
+            }
+        }, {
+            "@id": "http://desmsolutions.org/TermMapping/2179",
+            "@type": "desm:TermMapping",
+            "dcterms:isPartOf": {
+                "@id": "http://desmsolutions.org/TermMapping/165"
+            },
+            "desm:comment": null,
+            "desm:mappedterm": [
+                {
+                    "@id": "https://swan.desm.staging.c66.me/resources/terms/Creator"
+                }
+            ],
+            "desm:mappingPredicate": {
+                "@id": "https://swan.desm.staging.c66.me/resources/predicates/Identical"
+            },
+            "desm:spineTerm": {
+                "@id": "https://swan.desm.staging.c66.me/resources/terms/Creator"
+            }
+        }, {
+            "@id": "ceasn:creator",
+            "@type": "rdf:Property",
+            "desm:sourceURI": {
+                "@id": "ceasn:creator"
+            },
+            "rdfs:subPropertyOf": {
+                "@id": "dct:contributor"
+            },
+            "desm:valueSpace": {
+                "@id": null
+            },
+            "rdfs:label": "Creator",
+            "rdfs:comment": "An entity primarily responsible for making this resource.",
+            "rdfs:domain": {
+                "@id": "ceasn:Collection"
+            },
+            "rdfs:range": {
+                "@id": "ceterms:CredentialOrganization"
+            }
+        }, {
+            "@id": "ceasn:creator",
+            "@type": "rdf:Property",
+            "desm:sourceURI": {
+                "@id": "ceasn:creator"
+            },
+            "rdfs:subPropertyOf": {
+                "@id": "dct:contributor"
+            },
+            "desm:valueSpace": {
+                "@id": null
+            },
+            "rdfs:label": "Creator",
+            "rdfs:comment": "An entity primarily responsible for making this resource.",
+            "rdfs:domain": {
+                "@id": "ceasn:Collection"
+            },
+            "rdfs:range": {
+                "@id": "ceterms:CredentialOrganization"
+            }
+        }, {
+            "@id": "http://desmsolutions.org/TermMapping/2180",
+            "@type": "desm:TermMapping",
+            "dcterms:isPartOf": {
+                "@id": "http://desmsolutions.org/TermMapping/165"
+            },
+            "desm:comment": null,
+            "desm:mappedterm": [
+                {
+                    "@id": "https://swan.desm.staging.c66.me/resources/terms/Date+Created"
+                }
+            ],
+            "desm:mappingPredicate": {
+                "@id": "https://swan.desm.staging.c66.me/resources/predicates/Identical"
+            },
+            "desm:spineTerm": {
+                "@id": "https://swan.desm.staging.c66.me/resources/terms/Date+Created"
+            }
+        }, {
+            "@id": "ceasn:dateCreated",
+            "@type": "rdf:Property",
+            "desm:sourceURI": {
+                "@id": "ceasn:dateCreated"
+            },
+            "rdfs:subPropertyOf": {
+                "@id": "dct:date"
+            },
+            "desm:valueSpace": {
+                "@id": null
+            },
+            "rdfs:label": "Date Created",
+            "rdfs:comment": "Date of creation of this resource.",
+            "rdfs:domain": {
+                "@id": "ceasn:Collection"
+            },
+            "rdfs:range": {
+                "@id": "xsd:date"
+            }
+        }, {
+            "@id": "ceasn:dateCreated",
+            "@type": "rdf:Property",
+            "desm:sourceURI": {
+                "@id": "ceasn:dateCreated"
+            },
+            "rdfs:subPropertyOf": {
+                "@id": "dct:date"
+            },
+            "desm:valueSpace": {
+                "@id": null
+            },
+            "rdfs:label": "Date Created",
+            "rdfs:comment": "Date of creation of this resource.",
+            "rdfs:domain": {
+                "@id": "ceasn:Collection"
+            },
+            "rdfs:range": {
+                "@id": "xsd:date"
+            }
+        }, {
+            "@id": "http://desmsolutions.org/TermMapping/2181",
+            "@type": "desm:TermMapping",
+            "dcterms:isPartOf": {
+                "@id": "http://desmsolutions.org/TermMapping/165"
+            },
+            "desm:comment": null,
+            "desm:mappedterm": [
+                {
+                    "@id": "https://swan.desm.staging.c66.me/resources/terms/Date+Modified"
+                }
+            ],
+            "desm:mappingPredicate": {
+                "@id": "https://swan.desm.staging.c66.me/resources/predicates/Identical"
+            },
+            "desm:spineTerm": {
+                "@id": "https://swan.desm.staging.c66.me/resources/terms/Date+Modified"
+            }
+        }, {
+            "@id": "ceasn:dateModified",
+            "@type": "rdf:Property",
+            "desm:sourceURI": {
+                "@id": "ceasn:dateModified"
+            },
+            "rdfs:subPropertyOf": {
+                "@id": "dct:date"
+            },
+            "desm:valueSpace": {
+                "@id": null
+            },
+            "rdfs:label": "Date Modified",
+            "rdfs:comment": "The date on which this resource was most recently modified in some way.",
+            "rdfs:domain": {
+                "@id": "ceasn:Competency"
+            },
+            "rdfs:range": {
+                "@id": "xsd:dateTime"
+            }
+        }, {
+            "@id": "ceasn:dateModified",
+            "@type": "rdf:Property",
+            "desm:sourceURI": {
+                "@id": "ceasn:dateModified"
+            },
+            "rdfs:subPropertyOf": {
+                "@id": "dct:date"
+            },
+            "desm:valueSpace": {
+                "@id": null
+            },
+            "rdfs:label": "Date Modified",
+            "rdfs:comment": "The date on which this resource was most recently modified in some way.",
+            "rdfs:domain": {
+                "@id": "ceasn:Competency"
+            },
+            "rdfs:range": {
+                "@id": "xsd:dateTime"
+            }
+        }, {
+            "@id": "http://desmsolutions.org/TermMapping/2182",
+            "@type": "desm:TermMapping",
+            "dcterms:isPartOf": {
+                "@id": "http://desmsolutions.org/TermMapping/165"
+            },
+            "desm:comment": null,
+            "desm:mappedterm": [
+                {
+                    "@id": "https://swan.desm.staging.c66.me/resources/terms/Derived+From"
+                }
+            ],
+            "desm:mappingPredicate": {
+                "@id": "https://swan.desm.staging.c66.me/resources/predicates/Identical"
+            },
+            "desm:spineTerm": {
+                "@id": "https://swan.desm.staging.c66.me/resources/terms/Derived+From"
+            }
+        }, {
+            "@id": "ceasn:derivedFrom",
+            "@type": "rdf:Property",
+            "desm:sourceURI": {
+                "@id": "ceasn:derivedFrom"
+            },
+            "rdfs:subPropertyOf": {
+                "@id": "dc:relation"
+            },
+            "desm:valueSpace": {
+                "@id": null
+            },
+            "rdfs:label": "Derived From",
+            "rdfs:comment": "A version of the entity being referenced that has been modified in meaning through editing, extension or refinement.",
+            "rdfs:domain": {
+                "@id": "ceasn:Competency"
+            },
+            "rdfs:range": {
+                "@id": "ceasn:Competency"
+            }
+        }, {
+            "@id": "ceasn:derivedFrom",
+            "@type": "rdf:Property",
+            "desm:sourceURI": {
+                "@id": "ceasn:derivedFrom"
+            },
+            "rdfs:subPropertyOf": {
+                "@id": "dc:relation"
+            },
+            "desm:valueSpace": {
+                "@id": null
+            },
+            "rdfs:label": "Derived From",
+            "rdfs:comment": "A version of the entity being referenced that has been modified in meaning through editing, extension or refinement.",
+            "rdfs:domain": {
+                "@id": "ceasn:Competency"
+            },
+            "rdfs:range": {
+                "@id": "ceasn:Competency"
+            }
+        }, {
+            "@id": "http://desmsolutions.org/TermMapping/2183",
+            "@type": "desm:TermMapping",
+            "dcterms:isPartOf": {
+                "@id": "http://desmsolutions.org/TermMapping/165"
+            },
+            "desm:comment": null,
+            "desm:mappedterm": [
+                {
+                    "@id": "https://swan.desm.staging.c66.me/resources/terms/Education+Level+Type"
+                }
+            ],
+            "desm:mappingPredicate": {
+                "@id": "https://swan.desm.staging.c66.me/resources/predicates/Identical"
+            },
+            "desm:spineTerm": {
+                "@id": "https://swan.desm.staging.c66.me/resources/terms/Education+Level+Type"
+            }
+        }, {
+            "@id": "ceasn:educationLevelType",
+            "@type": "rdf:Property",
+            "desm:sourceURI": {
+                "@id": "ceasn:educationLevelType"
+            },
+            "rdfs:subPropertyOf": {
+                "@id": "dct:audience"
+            },
+            "desm:valueSpace": {
+                "@id": null
+            },
+            "rdfs:label": "Education Level Type",
+            "rdfs:comment": "A general statement describing the education or training context. Alternatively, a more specific statement of the location of the audience in terms of its progression through an education or training context.",
+            "rdfs:domain": {
+                "@id": "ceasn:Competency"
+            },
+            "rdfs:range": {
+                "@id": "skos:Concept"
+            }
+        }, {
+            "@id": "ceasn:educationLevelType",
+            "@type": "rdf:Property",
+            "desm:sourceURI": {
+                "@id": "ceasn:educationLevelType"
+            },
+            "rdfs:subPropertyOf": {
+                "@id": "dct:audience"
+            },
+            "desm:valueSpace": {
+                "@id": null
+            },
+            "rdfs:label": "Education Level Type",
+            "rdfs:comment": "A general statement describing the education or training context. Alternatively, a more specific statement of the location of the audience in terms of its progression through an education or training context.",
+            "rdfs:domain": {
+                "@id": "ceasn:Competency"
+            },
+            "rdfs:range": {
+                "@id": "skos:Concept"
+            }
+        }, {
+            "@id": "http://desmsolutions.org/TermMapping/2184",
+            "@type": "desm:TermMapping",
+            "dcterms:isPartOf": {
+                "@id": "http://desmsolutions.org/TermMapping/165"
+            },
+            "desm:comment": null,
+            "desm:mappedterm": [
+                {
+                    "@id": "https://swan.desm.staging.c66.me/resources/terms/Identifier"
+                }
+            ],
+            "desm:mappingPredicate": {
+                "@id": "https://swan.desm.staging.c66.me/resources/predicates/Identical"
+            },
+            "desm:spineTerm": {
+                "@id": "https://swan.desm.staging.c66.me/resources/terms/Identifier"
+            }
+        }, {
+            "@id": "ceasn:identifier",
+            "@type": "rdf:Property",
+            "desm:sourceURI": {
+                "@id": "ceasn:identifier"
+            },
+            "rdfs:subPropertyOf": {
+                "@id": null
+            },
+            "desm:valueSpace": {
+                "@id": null
+            },
+            "rdfs:label": "Identifier",
+            "rdfs:comment": "An alternative URI by which this competency framework or competency is identified.",
+            "rdfs:domain": {
+                "@id": "ceasn:Collection"
+            },
+            "rdfs:range": {
+                "@id": "xsd:anyURI"
+            }
+        }, {
+            "@id": "ceasn:identifier",
+            "@type": "rdf:Property",
+            "desm:sourceURI": {
+                "@id": "ceasn:identifier"
+            },
+            "rdfs:subPropertyOf": {
+                "@id": null
+            },
+            "desm:valueSpace": {
+                "@id": null
+            },
+            "rdfs:label": "Identifier",
+            "rdfs:comment": "An alternative URI by which this competency framework or competency is identified.",
+            "rdfs:domain": {
+                "@id": "ceasn:Collection"
+            },
+            "rdfs:range": {
+                "@id": "xsd:anyURI"
+            }
+        }, {
+            "@id": "http://desmsolutions.org/TermMapping/2185",
+            "@type": "desm:TermMapping",
+            "dcterms:isPartOf": {
+                "@id": "http://desmsolutions.org/TermMapping/165"
+            },
+            "desm:comment": null,
+            "desm:mappedterm": [
+                {
+                    "@id": "https://swan.desm.staging.c66.me/resources/terms/In+Language"
+                }
+            ],
+            "desm:mappingPredicate": {
+                "@id": "https://swan.desm.staging.c66.me/resources/predicates/Identical"
+            },
+            "desm:spineTerm": {
+                "@id": "https://swan.desm.staging.c66.me/resources/terms/In+Language"
+            }
+        }, {
+            "@id": "ceasn:inLanguage",
+            "@type": "rdf:Property",
+            "desm:sourceURI": {
+                "@id": "ceasn:inLanguage"
+            },
+            "rdfs:subPropertyOf": {
+                "@id": null
+            },
+            "desm:valueSpace": {
+                "@id": null
+            },
+            "rdfs:label": "In Language",
+            "rdfs:comment": "The primary language used in or by this resource.",
+            "rdfs:domain": {
+                "@id": "ceasn:Collection"
+            },
+            "rdfs:range": {
+                "@id": "xsd:language"
+            }
+        }, {
+            "@id": "ceasn:inLanguage",
+            "@type": "rdf:Property",
+            "desm:sourceURI": {
+                "@id": "ceasn:inLanguage"
+            },
+            "rdfs:subPropertyOf": {
+                "@id": null
+            },
+            "desm:valueSpace": {
+                "@id": null
+            },
+            "rdfs:label": "In Language",
+            "rdfs:comment": "The primary language used in or by this resource.",
+            "rdfs:domain": {
+                "@id": "ceasn:Collection"
+            },
+            "rdfs:range": {
+                "@id": "xsd:language"
+            }
+        }, {
+            "@id": "http://desmsolutions.org/TermMapping/2186",
+            "@type": "desm:TermMapping",
+            "dcterms:isPartOf": {
+                "@id": "http://desmsolutions.org/TermMapping/165"
+            },
+            "desm:comment": null,
+            "desm:mappedterm": [
+                {
+                    "@id": "https://swan.desm.staging.c66.me/resources/terms/License"
+                }
+            ],
+            "desm:mappingPredicate": {
+                "@id": "https://swan.desm.staging.c66.me/resources/predicates/Identical"
+            },
+            "desm:spineTerm": {
+                "@id": "https://swan.desm.staging.c66.me/resources/terms/License"
+            }
+        }, {
+            "@id": "ceasn:license",
+            "@type": "rdf:Property",
+            "desm:sourceURI": {
+                "@id": "ceasn:license"
+            },
+            "rdfs:subPropertyOf": {
+                "@id": "dct:rights"
+            },
+            "desm:valueSpace": {
+                "@id": null
+            },
+            "rdfs:label": "License",
+            "rdfs:comment": "A legal document giving official permission to do something with this resource.",
+            "rdfs:domain": {
+                "@id": "ceasn:Collection"
+            },
+            "rdfs:range": {
+                "@id": "xsd:anyURI"
+            }
+        }, {
+            "@id": "ceasn:license",
+            "@type": "rdf:Property",
+            "desm:sourceURI": {
+                "@id": "ceasn:license"
+            },
+            "rdfs:subPropertyOf": {
+                "@id": "dct:rights"
+            },
+            "desm:valueSpace": {
+                "@id": null
+            },
+            "rdfs:label": "License",
+            "rdfs:comment": "A legal document giving official permission to do something with this resource.",
+            "rdfs:domain": {
+                "@id": "ceasn:Collection"
+            },
+            "rdfs:range": {
+                "@id": "xsd:anyURI"
+            }
+        }, {
+            "@id": "http://desmsolutions.org/TermMapping/2187",
+            "@type": "desm:TermMapping",
+            "dcterms:isPartOf": {
+                "@id": "http://desmsolutions.org/TermMapping/165"
+            },
+            "desm:comment": null,
+            "desm:mappedterm": [
+                {
+                    "@id": "https://swan.desm.staging.c66.me/resources/terms/Local+Subject"
+                }
+            ],
+            "desm:mappingPredicate": {
+                "@id": "https://swan.desm.staging.c66.me/resources/predicates/Identical"
+            },
+            "desm:spineTerm": {
+                "@id": "https://swan.desm.staging.c66.me/resources/terms/Local+Subject"
+            }
+        }, {
+            "@id": "ceasn:localSubject",
+            "@type": "rdf:Property",
+            "desm:sourceURI": {
+                "@id": "ceasn:localSubject"
+            },
+            "rdfs:subPropertyOf": {
+                "@id": "dct:subject"
+            },
+            "desm:valueSpace": {
+                "@id": null
+            },
+            "rdfs:label": "Local Subject",
+            "rdfs:comment": "The text string denoting the subject of the competency framework or competency as designated by the promulgating agency.",
+            "rdfs:domain": {
+                "@id": "ceasn:Competency"
+            },
+            "rdfs:range": {
+                "@id": "rdf:langString"
+            }
+        }, {
+            "@id": "ceasn:localSubject",
+            "@type": "rdf:Property",
+            "desm:sourceURI": {
+                "@id": "ceasn:localSubject"
+            },
+            "rdfs:subPropertyOf": {
+                "@id": "dct:subject"
+            },
+            "desm:valueSpace": {
+                "@id": null
+            },
+            "rdfs:label": "Local Subject",
+            "rdfs:comment": "The text string denoting the subject of the competency framework or competency as designated by the promulgating agency.",
+            "rdfs:domain": {
+                "@id": "ceasn:Competency"
+            },
+            "rdfs:range": {
+                "@id": "rdf:langString"
+            }
+        }, {
+            "@id": "http://desmsolutions.org/TermMapping/2188",
+            "@type": "desm:TermMapping",
+            "dcterms:isPartOf": {
+                "@id": "http://desmsolutions.org/TermMapping/165"
+            },
+            "desm:comment": null,
+            "desm:mappedterm": [
+                {
+                    "@id": "https://swan.desm.staging.c66.me/resources/terms/CTID"
+                }
+            ],
+            "desm:mappingPredicate": {
+                "@id": "https://swan.desm.staging.c66.me/resources/predicates/Identical"
+            },
+            "desm:spineTerm": {
+                "@id": "https://swan.desm.staging.c66.me/resources/terms/CTID"
+            }
+        }, {
+            "@id": "ceterms:ctid",
+            "@type": "rdf:Property",
+            "desm:sourceURI": {
+                "@id": "ceterms:ctid"
+            },
+            "rdfs:subPropertyOf": {
+                "@id": "ceterms:credentialId"
+            },
+            "desm:valueSpace": {
+                "@id": null
+            },
+            "rdfs:label": "CTID",
+            "rdfs:comment": "Globally unique Credential Transparency Identifier (CTID) by which the creator, owner or provider of a resource recognizes it in transactions with the external environment (e.g., in verifiable claims involving the resource).",
+            "rdfs:domain": {
+                "@id": "ceasn:Competency"
+            },
+            "rdfs:range": {
+                "@id": "xsd:string"
+            }
+        }, {
+            "@id": "ceterms:ctid",
+            "@type": "rdf:Property",
+            "desm:sourceURI": {
+                "@id": "ceterms:ctid"
+            },
+            "rdfs:subPropertyOf": {
+                "@id": "ceterms:credentialId"
+            },
+            "desm:valueSpace": {
+                "@id": null
+            },
+            "rdfs:label": "CTID",
+            "rdfs:comment": "Globally unique Credential Transparency Identifier (CTID) by which the creator, owner or provider of a resource recognizes it in transactions with the external environment (e.g., in verifiable claims involving the resource).",
+            "rdfs:domain": {
+                "@id": "ceasn:Competency"
+            },
+            "rdfs:range": {
+                "@id": "xsd:string"
+            }
+        }, {
+            "@id": "http://desmsolutions.org/TermMapping/2189",
+            "@type": "desm:TermMapping",
+            "dcterms:isPartOf": {
+                "@id": "http://desmsolutions.org/TermMapping/165"
+            },
+            "desm:comment": null,
+            "desm:mappedterm": [
+                {
+                    "@id": "https://swan.desm.staging.c66.me/resources/terms/Industry+Type"
+                }
+            ],
+            "desm:mappingPredicate": {
+                "@id": "https://swan.desm.staging.c66.me/resources/predicates/Identical"
+            },
+            "desm:spineTerm": {
+                "@id": "https://swan.desm.staging.c66.me/resources/terms/Industry+Type"
+            }
+        }, {
+            "@id": "ceterms:industryType",
+            "@type": "rdf:Property",
+            "desm:sourceURI": {
+                "@id": "ceterms:industryType"
+            },
+            "rdfs:subPropertyOf": {
+                "@id": "ceterms:credentialAlignment"
+            },
+            "desm:valueSpace": {
+                "@id": null
+            },
+            "rdfs:label": "Industry Type",
+            "rdfs:comment": "Type of industry; select from an existing enumeration of such types such as the SIC, NAICS, and ISIC classifications.",
+            "rdfs:domain": {
+                "@id": "ceasn:Competency"
+            },
+            "rdfs:range": {
+                "@id": "ceterms:CredentialAlignmentObject"
+            }
+        }, {
+            "@id": "ceterms:industryType",
+            "@type": "rdf:Property",
+            "desm:sourceURI": {
+                "@id": "ceterms:industryType"
+            },
+            "rdfs:subPropertyOf": {
+                "@id": "ceterms:credentialAlignment"
+            },
+            "desm:valueSpace": {
+                "@id": null
+            },
+            "rdfs:label": "Industry Type",
+            "rdfs:comment": "Type of industry; select from an existing enumeration of such types such as the SIC, NAICS, and ISIC classifications.",
+            "rdfs:domain": {
+                "@id": "ceasn:Competency"
+            },
+            "rdfs:range": {
+                "@id": "ceterms:CredentialAlignmentObject"
+            }
+        }, {
+            "@id": "http://desmsolutions.org/TermMapping/2190",
+            "@type": "desm:TermMapping",
+            "dcterms:isPartOf": {
+                "@id": "http://desmsolutions.org/TermMapping/165"
+            },
+            "desm:comment": null,
+            "desm:mappedterm": [
+                {
+                    "@id": "https://swan.desm.staging.c66.me/resources/terms/Instructional+Program+Type"
+                }
+            ],
+            "desm:mappingPredicate": {
+                "@id": "https://swan.desm.staging.c66.me/resources/predicates/Identical"
+            },
+            "desm:spineTerm": {
+                "@id": "https://swan.desm.staging.c66.me/resources/terms/Instructional+Program+Type"
+            }
+        }, {
+            "@id": "ceterms:instructionalProgramType",
+            "@type": "rdf:Property",
+            "desm:sourceURI": {
+                "@id": "ceterms:instructionalProgramType"
+            },
+            "rdfs:subPropertyOf": {
+                "@id": "ceterms:credentialAlignment"
+            },
+            "desm:valueSpace": {
+                "@id": null
+            },
+            "rdfs:label": "Instructional Program Type",
+            "rdfs:comment": "Type of instructional program; select from an existing enumeration of such types.",
+            "rdfs:domain": {
+                "@id": "ceasn:Competency"
+            },
+            "rdfs:range": {
+                "@id": "ceterms:CredentialAlignmentObject"
+            }
+        }, {
+            "@id": "ceterms:instructionalProgramType",
+            "@type": "rdf:Property",
+            "desm:sourceURI": {
+                "@id": "ceterms:instructionalProgramType"
+            },
+            "rdfs:subPropertyOf": {
+                "@id": "ceterms:credentialAlignment"
+            },
+            "desm:valueSpace": {
+                "@id": null
+            },
+            "rdfs:label": "Instructional Program Type",
+            "rdfs:comment": "Type of instructional program; select from an existing enumeration of such types.",
+            "rdfs:domain": {
+                "@id": "ceasn:Competency"
+            },
+            "rdfs:range": {
+                "@id": "ceterms:CredentialAlignmentObject"
+            }
+        }, {
+            "@id": "http://desmsolutions.org/TermMapping/2191",
+            "@type": "desm:TermMapping",
+            "dcterms:isPartOf": {
+                "@id": "http://desmsolutions.org/TermMapping/165"
+            },
+            "desm:comment": null,
+            "desm:mappedterm": [
+                {
+                    "@id": "https://swan.desm.staging.c66.me/resources/terms/Occupation+Type"
+                }
+            ],
+            "desm:mappingPredicate": {
+                "@id": "https://swan.desm.staging.c66.me/resources/predicates/Identical"
+            },
+            "desm:spineTerm": {
+                "@id": "https://swan.desm.staging.c66.me/resources/terms/Occupation+Type"
+            }
+        }, {
+            "@id": "ceterms:occupationType",
+            "@type": "rdf:Property",
+            "desm:sourceURI": {
+                "@id": "ceterms:occupationType"
+            },
+            "rdfs:subPropertyOf": {
+                "@id": "ceterms:credentialAlignment"
+            },
+            "desm:valueSpace": {
+                "@id": null
+            },
+            "rdfs:label": "Occupation Type",
+            "rdfs:comment": "Type of occupation; select from an existing enumeration of such types.",
+            "rdfs:domain": {
+                "@id": "ceasn:Competency"
+            },
+            "rdfs:range": {
+                "@id": "ceterms:CredentialAlignmentObject"
+            }
+        }, {
+            "@id": "ceterms:occupationType",
+            "@type": "rdf:Property",
+            "desm:sourceURI": {
+                "@id": "ceterms:occupationType"
+            },
+            "rdfs:subPropertyOf": {
+                "@id": "ceterms:credentialAlignment"
+            },
+            "desm:valueSpace": {
+                "@id": null
+            },
+            "rdfs:label": "Occupation Type",
+            "rdfs:comment": "Type of occupation; select from an existing enumeration of such types.",
+            "rdfs:domain": {
+                "@id": "ceasn:Competency"
+            },
+            "rdfs:range": {
+                "@id": "ceterms:CredentialAlignmentObject"
+            }
+        }, {
+            "@id": "http://desmsolutions.org/TermMapping/2192",
+            "@type": "desm:TermMapping",
+            "dcterms:isPartOf": {
+                "@id": "http://desmsolutions.org/TermMapping/165"
+            },
+            "desm:comment": null,
+            "desm:mappedterm": [
+                {
+                    "@id": "https://swan.desm.staging.c66.me/resources/terms/Has+Progression+Level"
+                }
+            ],
+            "desm:mappingPredicate": {
+                "@id": "https://swan.desm.staging.c66.me/resources/predicates/Identical"
+            },
+            "desm:spineTerm": {
+                "@id": "https://swan.desm.staging.c66.me/resources/terms/Has+Progression+Level"
+            }
+        }, {
+            "@id": "asn:hasProgressionLevel",
+            "@type": "rdf:Property",
+            "desm:sourceURI": {
+                "@id": "asn:hasProgressionLevel"
+            },
+            "rdfs:subPropertyOf": {
+                "@id": null
+            },
+            "desm:valueSpace": {
+                "@id": null
+            },
+            "rdfs:label": "Has Progression Level",
+            "rdfs:comment": "Reference to a specific point in a progression model.",
+            "rdfs:domain": {
+                "@id": "ceasn:Competency"
+            },
+            "rdfs:range": {
+                "@id": "asn:ProgressionLevel"
+            }
+        }, {
+            "@id": "asn:hasProgressionLevel",
+            "@type": "rdf:Property",
+            "desm:sourceURI": {
+                "@id": "asn:hasProgressionLevel"
+            },
+            "rdfs:subPropertyOf": {
+                "@id": null
+            },
+            "desm:valueSpace": {
+                "@id": null
+            },
+            "rdfs:label": "Has Progression Level",
+            "rdfs:comment": "Reference to a specific point in a progression model.",
+            "rdfs:domain": {
+                "@id": "ceasn:Competency"
+            },
+            "rdfs:range": {
+                "@id": "asn:ProgressionLevel"
+            }
+        }, {
+            "@id": "http://desmsolutions.org/TermMapping/2193",
+            "@type": "desm:TermMapping",
+            "dcterms:isPartOf": {
+                "@id": "http://desmsolutions.org/TermMapping/165"
+            },
+            "desm:comment": null,
+            "desm:mappedterm": [
+                {
+                    "@id": "https://swan.desm.staging.c66.me/resources/terms/Ability+Embodied"
+                }
+            ],
+            "desm:mappingPredicate": {
+                "@id": "https://swan.desm.staging.c66.me/resources/predicates/Identical"
+            },
+            "desm:spineTerm": {
+                "@id": "https://swan.desm.staging.c66.me/resources/terms/Ability+Embodied"
+            }
+        }, {
+            "@id": "ceasn:abilityEmbodied",
+            "@type": "rdf:Property",
+            "desm:sourceURI": {
+                "@id": "ceasn:abilityEmbodied"
+            },
+            "rdfs:subPropertyOf": {
+                "@id": null
+            },
+            "desm:valueSpace": {
+                "@id": null
+            },
+            "rdfs:label": "Ability Embodied",
+            "rdfs:comment": "Enduring attributes of the individual that influence performance are embodied either directly or indirectly in this resource.",
+            "rdfs:domain": {
+                "@id": "ceasn:Competency"
+            },
+            "rdfs:range": {
+                "@id": "xsd:anyURI"
+            }
+        }, {
+            "@id": "ceasn:abilityEmbodied",
+            "@type": "rdf:Property",
+            "desm:sourceURI": {
+                "@id": "ceasn:abilityEmbodied"
+            },
+            "rdfs:subPropertyOf": {
+                "@id": null
+            },
+            "desm:valueSpace": {
+                "@id": null
+            },
+            "rdfs:label": "Ability Embodied",
+            "rdfs:comment": "Enduring attributes of the individual that influence performance are embodied either directly or indirectly in this resource.",
+            "rdfs:domain": {
+                "@id": "ceasn:Competency"
+            },
+            "rdfs:range": {
+                "@id": "xsd:anyURI"
+            }
+        }, {
+            "@id": "http://desmsolutions.org/TermMapping/2194",
+            "@type": "desm:TermMapping",
+            "dcterms:isPartOf": {
+                "@id": "http://desmsolutions.org/TermMapping/165"
+            },
+            "desm:comment": null,
+            "desm:mappedterm": [
+                {
+                    "@id": "https://swan.desm.staging.c66.me/resources/terms/Alternative+Coded+Notation"
+                }
+            ],
+            "desm:mappingPredicate": {
+                "@id": "https://swan.desm.staging.c66.me/resources/predicates/Identical"
+            },
+            "desm:spineTerm": {
+                "@id": "https://swan.desm.staging.c66.me/resources/terms/Alternative+Coded+Notation"
+            }
+        }, {
+            "@id": "ceasn:altCodedNotation",
+            "@type": "rdf:Property",
+            "desm:sourceURI": {
+                "@id": "ceasn:altCodedNotation"
+            },
+            "rdfs:subPropertyOf": {
+                "@id": "dct:identifier"
+            },
+            "desm:valueSpace": {
+                "@id": null
+            },
+            "rdfs:label": "Alternative Coded Notation",
+            "rdfs:comment": "An alphanumeric notation or ID code identifying this competency in common use among end-users.",
+            "rdfs:domain": {
+                "@id": "ceasn:Competency"
+            },
+            "rdfs:range": {
+                "@id": "xsd:string"
+            }
+        }, {
+            "@id": "ceasn:altCodedNotation",
+            "@type": "rdf:Property",
+            "desm:sourceURI": {
+                "@id": "ceasn:altCodedNotation"
+            },
+            "rdfs:subPropertyOf": {
+                "@id": "dct:identifier"
+            },
+            "desm:valueSpace": {
+                "@id": null
+            },
+            "rdfs:label": "Alternative Coded Notation",
+            "rdfs:comment": "An alphanumeric notation or ID code identifying this competency in common use among end-users.",
+            "rdfs:domain": {
+                "@id": "ceasn:Competency"
+            },
+            "rdfs:range": {
+                "@id": "xsd:string"
+            }
+        }, {
+            "@id": "http://desmsolutions.org/TermMapping/2195",
+            "@type": "desm:TermMapping",
+            "dcterms:isPartOf": {
+                "@id": "http://desmsolutions.org/TermMapping/165"
+            },
+            "desm:comment": null,
+            "desm:mappedterm": [
+                {
+                    "@id": "https://swan.desm.staging.c66.me/resources/terms/Broad+Alignment"
+                }
+            ],
+            "desm:mappingPredicate": {
+                "@id": "https://swan.desm.staging.c66.me/resources/predicates/Identical"
+            },
+            "desm:spineTerm": {
+                "@id": "https://swan.desm.staging.c66.me/resources/terms/Broad+Alignment"
+            }
+        }, {
+            "@id": "ceasn:broadAlignment",
+            "@type": "rdf:Property",
+            "desm:sourceURI": {
+                "@id": "ceasn:broadAlignment"
+            },
+            "rdfs:subPropertyOf": {
+                "@id": null
+            },
+            "desm:valueSpace": {
+                "@id": null
+            },
+            "rdfs:label": "Broad Alignment",
+            "rdfs:comment": "The referenced competency covers all of the relevant concepts in this competency as well as relevant concepts not found in this competency.",
+            "rdfs:domain": {
+                "@id": "ceasn:Competency"
+            },
+            "rdfs:range": {
+                "@id": "ceasn:Competency"
+            }
+        }, {
+            "@id": "ceasn:broadAlignment",
+            "@type": "rdf:Property",
+            "desm:sourceURI": {
+                "@id": "ceasn:broadAlignment"
+            },
+            "rdfs:subPropertyOf": {
+                "@id": null
+            },
+            "desm:valueSpace": {
+                "@id": null
+            },
+            "rdfs:label": "Broad Alignment",
+            "rdfs:comment": "The referenced competency covers all of the relevant concepts in this competency as well as relevant concepts not found in this competency.",
+            "rdfs:domain": {
+                "@id": "ceasn:Competency"
+            },
+            "rdfs:range": {
+                "@id": "ceasn:Competency"
+            }
+        }, {
+            "@id": "http://desmsolutions.org/TermMapping/2196",
+            "@type": "desm:TermMapping",
+            "dcterms:isPartOf": {
+                "@id": "http://desmsolutions.org/TermMapping/165"
+            },
+            "desm:comment": null,
+            "desm:mappedterm": [
+                {
+                    "@id": "https://swan.desm.staging.c66.me/resources/terms/Coded+Notation"
+                }
+            ],
+            "desm:mappingPredicate": {
+                "@id": "https://swan.desm.staging.c66.me/resources/predicates/Identical"
+            },
+            "desm:spineTerm": {
+                "@id": "https://swan.desm.staging.c66.me/resources/terms/Coded+Notation"
+            }
+        }, {
+            "@id": "ceasn:codedNotation",
+            "@type": "rdf:Property",
+            "desm:sourceURI": {
+                "@id": "ceasn:codedNotation"
+            },
+            "rdfs:subPropertyOf": {
+                "@id": "dct:identifier"
+            },
+            "desm:valueSpace": {
+                "@id": null
+            },
+            "rdfs:label": "Coded Notation",
+            "rdfs:comment": "An alphanumeric notation or ID code as defined by the promulgating body to identify this resource.",
+            "rdfs:domain": {
+                "@id": "ceasn:Competency"
+            },
+            "rdfs:range": {
+                "@id": "xsd:string"
+            }
+        }, {
+            "@id": "ceasn:codedNotation",
+            "@type": "rdf:Property",
+            "desm:sourceURI": {
+                "@id": "ceasn:codedNotation"
+            },
+            "rdfs:subPropertyOf": {
+                "@id": "dct:identifier"
+            },
+            "desm:valueSpace": {
+                "@id": null
+            },
+            "rdfs:label": "Coded Notation",
+            "rdfs:comment": "An alphanumeric notation or ID code as defined by the promulgating body to identify this resource.",
+            "rdfs:domain": {
+                "@id": "ceasn:Competency"
+            },
+            "rdfs:range": {
+                "@id": "xsd:string"
+            }
+        }, {
+            "@id": "http://desmsolutions.org/TermMapping/2197",
+            "@type": "desm:TermMapping",
+            "dcterms:isPartOf": {
+                "@id": "http://desmsolutions.org/TermMapping/165"
+            },
+            "desm:comment": null,
+            "desm:mappedterm": [
+                {
+                    "@id": "https://swan.desm.staging.c66.me/resources/terms/Comment"
+                }
+            ],
+            "desm:mappingPredicate": {
+                "@id": "https://swan.desm.staging.c66.me/resources/predicates/Identical"
+            },
+            "desm:spineTerm": {
+                "@id": "https://swan.desm.staging.c66.me/resources/terms/Comment"
+            }
+        }, {
+            "@id": "ceasn:comment",
+            "@type": "rdf:Property",
+            "desm:sourceURI": {
+                "@id": "ceasn:comment"
+            },
+            "rdfs:subPropertyOf": {
+                "@id": null
+            },
+            "desm:valueSpace": {
+                "@id": null
+            },
+            "rdfs:label": "Comment",
+            "rdfs:comment": "Supplemental text provided by the promulgating body that clarifies the nature, scope or use of this resource.",
+            "rdfs:domain": {
+                "@id": "ceasn:Competency"
+            },
+            "rdfs:range": {
+                "@id": "rdf:langString"
+            }
+        }, {
+            "@id": "ceasn:comment",
+            "@type": "rdf:Property",
+            "desm:sourceURI": {
+                "@id": "ceasn:comment"
+            },
+            "rdfs:subPropertyOf": {
+                "@id": null
+            },
+            "desm:valueSpace": {
+                "@id": null
+            },
+            "rdfs:label": "Comment",
+            "rdfs:comment": "Supplemental text provided by the promulgating body that clarifies the nature, scope or use of this resource.",
+            "rdfs:domain": {
+                "@id": "ceasn:Competency"
+            },
+            "rdfs:range": {
+                "@id": "rdf:langString"
+            }
+        }, {
+            "@id": "http://desmsolutions.org/TermMapping/2198",
+            "@type": "desm:TermMapping",
+            "dcterms:isPartOf": {
+                "@id": "http://desmsolutions.org/TermMapping/165"
+            },
+            "desm:comment": null,
+            "desm:mappedterm": [
+                {
+                    "@id": "https://swan.desm.staging.c66.me/resources/terms/Competency+Category"
+                }
+            ],
+            "desm:mappingPredicate": {
+                "@id": "https://swan.desm.staging.c66.me/resources/predicates/Identical"
+            },
+            "desm:spineTerm": {
+                "@id": "https://swan.desm.staging.c66.me/resources/terms/Competency+Category"
+            }
+        }, {
+            "@id": "ceasn:competencyCategory",
+            "@type": "rdf:Property",
+            "desm:sourceURI": {
+                "@id": "ceasn:competencyCategory"
+            },
+            "rdfs:subPropertyOf": {
+                "@id": null
+            },
+            "desm:valueSpace": {
+                "@id": null
+            },
+            "rdfs:label": "Competency Category",
+            "rdfs:comment": "The textual label identifying the category of the competency as designated by the promulgating body.",
+            "rdfs:domain": {
+                "@id": "ceasn:Competency"
+            },
+            "rdfs:range": {
+                "@id": "rdf:langString"
+            }
+        }, {
+            "@id": "ceasn:competencyCategory",
+            "@type": "rdf:Property",
+            "desm:sourceURI": {
+                "@id": "ceasn:competencyCategory"
+            },
+            "rdfs:subPropertyOf": {
+                "@id": null
+            },
+            "desm:valueSpace": {
+                "@id": null
+            },
+            "rdfs:label": "Competency Category",
+            "rdfs:comment": "The textual label identifying the category of the competency as designated by the promulgating body.",
+            "rdfs:domain": {
+                "@id": "ceasn:Competency"
+            },
+            "rdfs:range": {
+                "@id": "rdf:langString"
+            }
+        }, {
+            "@id": "http://desmsolutions.org/TermMapping/2199",
+            "@type": "desm:TermMapping",
+            "dcterms:isPartOf": {
+                "@id": "http://desmsolutions.org/TermMapping/165"
+            },
+            "desm:comment": null,
+            "desm:mappedterm": [
+                {
+                    "@id": "https://swan.desm.staging.c66.me/resources/terms/Competency+Label"
+                }
+            ],
+            "desm:mappingPredicate": {
+                "@id": "https://swan.desm.staging.c66.me/resources/predicates/Identical"
+            },
+            "desm:spineTerm": {
+                "@id": "https://swan.desm.staging.c66.me/resources/terms/Competency+Label"
+            }
+        }, {
+            "@id": "ceasn:competencyLabel",
+            "@type": "rdf:Property",
+            "desm:sourceURI": {
+                "@id": "ceasn:competencyLabel"
+            },
+            "rdfs:subPropertyOf": {
+                "@id": "[\"ceasn:name\", \"schema:name\"]"
+            },
+            "desm:valueSpace": {
+                "@id": null
+            },
+            "rdfs:label": "Competency Label",
+            "rdfs:comment": "Short identifying phrase or name applied to a competency by the creator of the competency framework.",
+            "rdfs:domain": {
+                "@id": "ceasn:Competency"
+            },
+            "rdfs:range": {
+                "@id": "rdf:langString"
+            }
+        }, {
+            "@id": "ceasn:competencyLabel",
+            "@type": "rdf:Property",
+            "desm:sourceURI": {
+                "@id": "ceasn:competencyLabel"
+            },
+            "rdfs:subPropertyOf": {
+                "@id": "[\"ceasn:name\", \"schema:name\"]"
+            },
+            "desm:valueSpace": {
+                "@id": null
+            },
+            "rdfs:label": "Competency Label",
+            "rdfs:comment": "Short identifying phrase or name applied to a competency by the creator of the competency framework.",
+            "rdfs:domain": {
+                "@id": "ceasn:Competency"
+            },
+            "rdfs:range": {
+                "@id": "rdf:langString"
+            }
+        }, {
+            "@id": "http://desmsolutions.org/TermMapping/2200",
+            "@type": "desm:TermMapping",
+            "dcterms:isPartOf": {
+                "@id": "http://desmsolutions.org/TermMapping/165"
+            },
+            "desm:comment": null,
+            "desm:mappedterm": [
+                {
+                    "@id": "https://swan.desm.staging.c66.me/resources/terms/Competency+Text"
+                }
+            ],
+            "desm:mappingPredicate": {
+                "@id": "https://swan.desm.staging.c66.me/resources/predicates/Identical"
+            },
+            "desm:spineTerm": {
+                "@id": "https://swan.desm.staging.c66.me/resources/terms/Competency+Text"
+            }
+        }, {
+            "@id": "ceasn:competencyText",
+            "@type": "rdf:Property",
+            "desm:sourceURI": {
+                "@id": "ceasn:competencyText"
+            },
+            "rdfs:subPropertyOf": {
+                "@id": "dct:description"
+            },
+            "desm:valueSpace": {
+                "@id": null
+            },
+            "rdfs:label": "Competency Text",
+            "rdfs:comment": "The text of the competency.",
+            "rdfs:domain": {
+                "@id": "ceasn:Competency"
+            },
+            "rdfs:range": {
+                "@id": "rdf:langString"
+            }
+        }, {
+            "@id": "ceasn:competencyText",
+            "@type": "rdf:Property",
+            "desm:sourceURI": {
+                "@id": "ceasn:competencyText"
+            },
+            "rdfs:subPropertyOf": {
+                "@id": "dct:description"
+            },
+            "desm:valueSpace": {
+                "@id": null
+            },
+            "rdfs:label": "Competency Text",
+            "rdfs:comment": "The text of the competency.",
+            "rdfs:domain": {
+                "@id": "ceasn:Competency"
+            },
+            "rdfs:range": {
+                "@id": "rdf:langString"
+            }
+        }, {
+            "@id": "http://desmsolutions.org/TermMapping/2201",
+            "@type": "desm:TermMapping",
+            "dcterms:isPartOf": {
+                "@id": "http://desmsolutions.org/TermMapping/165"
+            },
+            "desm:comment": null,
+            "desm:mappedterm": [
+                {
+                    "@id": "https://swan.desm.staging.c66.me/resources/terms/Complexity+Level"
+                }
+            ],
+            "desm:mappingPredicate": {
+                "@id": "https://swan.desm.staging.c66.me/resources/predicates/Identical"
+            },
+            "desm:spineTerm": {
+                "@id": "https://swan.desm.staging.c66.me/resources/terms/Complexity+Level"
+            }
+        }, {
+            "@id": "ceasn:complexityLevel",
+            "@type": "rdf:Property",
+            "desm:sourceURI": {
+                "@id": "ceasn:complexityLevel"
+            },
+            "rdfs:subPropertyOf": {
+                "@id": null
+            },
+            "desm:valueSpace": {
+                "@id": null
+            },
+            "rdfs:label": "Complexity Level",
+            "rdfs:comment": "The expected performance level of a learner or professional as defined by a competency.",
+            "rdfs:domain": {
+                "@id": "ceasn:Competency"
+            },
+            "rdfs:range": {
+                "@id": "ceasn:ProficiencyScale"
+            }
+        }, {
+            "@id": "ceasn:complexityLevel",
+            "@type": "rdf:Property",
+            "desm:sourceURI": {
+                "@id": "ceasn:complexityLevel"
+            },
+            "rdfs:subPropertyOf": {
+                "@id": null
+            },
+            "desm:valueSpace": {
+                "@id": null
+            },
+            "rdfs:label": "Complexity Level",
+            "rdfs:comment": "The expected performance level of a learner or professional as defined by a competency.",
+            "rdfs:domain": {
+                "@id": "ceasn:Competency"
+            },
+            "rdfs:range": {
+                "@id": "ceasn:ProficiencyScale"
+            }
+        }, {
+            "@id": "http://desmsolutions.org/TermMapping/2202",
+            "@type": "desm:TermMapping",
+            "dcterms:isPartOf": {
+                "@id": "http://desmsolutions.org/TermMapping/165"
+            },
+            "desm:comment": null,
+            "desm:mappedterm": [
+                {
+                    "@id": "https://swan.desm.staging.c66.me/resources/terms/Comprised+Of"
+                }
+            ],
+            "desm:mappingPredicate": {
+                "@id": "https://swan.desm.staging.c66.me/resources/predicates/Identical"
+            },
+            "desm:spineTerm": {
+                "@id": "https://swan.desm.staging.c66.me/resources/terms/Comprised+Of"
+            }
+        }, {
+            "@id": "ceasn:comprisedOf",
+            "@type": "rdf:Property",
+            "desm:sourceURI": {
+                "@id": "ceasn:comprisedOf"
+            },
+            "rdfs:subPropertyOf": {
+                "@id": null
+            },
+            "desm:valueSpace": {
+                "@id": null
+            },
+            "rdfs:label": "Comprised Of",
+            "rdfs:comment": "This competency includes, comprehends or encompasses, in whole or in part, the meaning, nature or importance of the referenced competency.",
+            "rdfs:domain": {
+                "@id": "ceasn:Competency"
+            },
+            "rdfs:range": {
+                "@id": "ceasn:Competency"
+            }
+        }, {
+            "@id": "ceasn:comprisedOf",
+            "@type": "rdf:Property",
+            "desm:sourceURI": {
+                "@id": "ceasn:comprisedOf"
+            },
+            "rdfs:subPropertyOf": {
+                "@id": null
+            },
+            "desm:valueSpace": {
+                "@id": null
+            },
+            "rdfs:label": "Comprised Of",
+            "rdfs:comment": "This competency includes, comprehends or encompasses, in whole or in part, the meaning, nature or importance of the referenced competency.",
+            "rdfs:domain": {
+                "@id": "ceasn:Competency"
+            },
+            "rdfs:range": {
+                "@id": "ceasn:Competency"
+            }
+        }, {
+            "@id": "http://desmsolutions.org/TermMapping/2203",
+            "@type": "desm:TermMapping",
+            "dcterms:isPartOf": {
+                "@id": "http://desmsolutions.org/TermMapping/165"
+            },
+            "desm:comment": null,
+            "desm:mappedterm": [
+                {
+                    "@id": "https://swan.desm.staging.c66.me/resources/terms/Cross-Subject+Reference"
+                }
+            ],
+            "desm:mappingPredicate": {
+                "@id": "https://swan.desm.staging.c66.me/resources/predicates/Identical"
+            },
+            "desm:spineTerm": {
+                "@id": "https://swan.desm.staging.c66.me/resources/terms/Cross-Subject+Reference"
+            }
+        }, {
+            "@id": "ceasn:crossSubjectReference",
+            "@type": "rdf:Property",
+            "desm:sourceURI": {
+                "@id": "ceasn:crossSubjectReference"
+            },
+            "rdfs:subPropertyOf": {
+                "@id": "dct:relation"
+            },
+            "desm:valueSpace": {
+                "@id": null
+            },
+            "rdfs:label": "Cross-Subject Reference",
+            "rdfs:comment": "A relationship between this competency and a competency in a separate competency framework.",
+            "rdfs:domain": {
+                "@id": "ceasn:Competency"
+            },
+            "rdfs:range": {
+                "@id": "ceasn:Competency"
+            }
+        }, {
+            "@id": "ceasn:crossSubjectReference",
+            "@type": "rdf:Property",
+            "desm:sourceURI": {
+                "@id": "ceasn:crossSubjectReference"
+            },
+            "rdfs:subPropertyOf": {
+                "@id": "dct:relation"
+            },
+            "desm:valueSpace": {
+                "@id": null
+            },
+            "rdfs:label": "Cross-Subject Reference",
+            "rdfs:comment": "A relationship between this competency and a competency in a separate competency framework.",
+            "rdfs:domain": {
+                "@id": "ceasn:Competency"
+            },
+            "rdfs:range": {
+                "@id": "ceasn:Competency"
+            }
+        }, {
+            "@id": "http://desmsolutions.org/TermMapping/2204",
+            "@type": "desm:TermMapping",
+            "dcterms:isPartOf": {
+                "@id": "http://desmsolutions.org/TermMapping/165"
+            },
+            "desm:comment": null,
+            "desm:mappedterm": [
+                {
+                    "@id": "https://swan.desm.staging.c66.me/resources/terms/Exact+Alignment"
+                }
+            ],
+            "desm:mappingPredicate": {
+                "@id": "https://swan.desm.staging.c66.me/resources/predicates/Identical"
+            },
+            "desm:spineTerm": {
+                "@id": "https://swan.desm.staging.c66.me/resources/terms/Exact+Alignment"
+            }
+        }, {
+            "@id": "ceasn:exactAlignment",
+            "@type": "rdf:Property",
+            "desm:sourceURI": {
+                "@id": "ceasn:exactAlignment"
+            },
+            "rdfs:subPropertyOf": {
+                "@id": null
+            },
+            "desm:valueSpace": {
+                "@id": null
+            },
+            "rdfs:label": "Exact Alignment",
+            "rdfs:comment": "The relevant concepts in this competency and the referenced competency are coextensive.",
+            "rdfs:domain": {
+                "@id": "ceasn:Competency"
+            },
+            "rdfs:range": {
+                "@id": "ceasn:Competency"
+            }
+        }, {
+            "@id": "ceasn:exactAlignment",
+            "@type": "rdf:Property",
+            "desm:sourceURI": {
+                "@id": "ceasn:exactAlignment"
+            },
+            "rdfs:subPropertyOf": {
+                "@id": null
+            },
+            "desm:valueSpace": {
+                "@id": null
+            },
+            "rdfs:label": "Exact Alignment",
+            "rdfs:comment": "The relevant concepts in this competency and the referenced competency are coextensive.",
+            "rdfs:domain": {
+                "@id": "ceasn:Competency"
+            },
+            "rdfs:range": {
+                "@id": "ceasn:Competency"
+            }
+        }, {
+            "@id": "http://desmsolutions.org/TermMapping/2205",
+            "@type": "desm:TermMapping",
+            "dcterms:isPartOf": {
+                "@id": "http://desmsolutions.org/TermMapping/165"
+            },
+            "desm:comment": null,
+            "desm:mappedterm": [
+                {
+                    "@id": "https://swan.desm.staging.c66.me/resources/terms/Has+Child"
+                }
+            ],
+            "desm:mappingPredicate": {
+                "@id": "https://swan.desm.staging.c66.me/resources/predicates/Identical"
+            },
+            "desm:spineTerm": {
+                "@id": "https://swan.desm.staging.c66.me/resources/terms/Has+Child"
+            }
+        }, {
+            "@id": "ceasn:hasChild",
+            "@type": "rdf:Property",
+            "desm:sourceURI": {
+                "@id": "ceasn:hasChild"
+            },
+            "rdfs:subPropertyOf": {
+                "@id": "dc:relation"
+            },
+            "desm:valueSpace": {
+                "@id": null
+            },
+            "rdfs:label": "Has Child",
+            "rdfs:comment": "The referenced resource is lower in some arbitrary hierarchy than this resource.",
+            "rdfs:domain": {
+                "@id": "ceasn:Competency"
+            },
+            "rdfs:range": {
+                "@id": "ceasn:Competency"
+            }
+        }, {
+            "@id": "ceasn:hasChild",
+            "@type": "rdf:Property",
+            "desm:sourceURI": {
+                "@id": "ceasn:hasChild"
+            },
+            "rdfs:subPropertyOf": {
+                "@id": "dc:relation"
+            },
+            "desm:valueSpace": {
+                "@id": null
+            },
+            "rdfs:label": "Has Child",
+            "rdfs:comment": "The referenced resource is lower in some arbitrary hierarchy than this resource.",
+            "rdfs:domain": {
+                "@id": "ceasn:Competency"
+            },
+            "rdfs:range": {
+                "@id": "ceasn:Competency"
+            }
+        }, {
+            "@id": "http://desmsolutions.org/TermMapping/2206",
+            "@type": "desm:TermMapping",
+            "dcterms:isPartOf": {
+                "@id": "http://desmsolutions.org/TermMapping/165"
+            },
+            "desm:comment": null,
+            "desm:mappedterm": [
+                {
+                    "@id": "https://swan.desm.staging.c66.me/resources/terms/Inferred+Competency"
+                }
+            ],
+            "desm:mappingPredicate": {
+                "@id": "https://swan.desm.staging.c66.me/resources/predicates/Identical"
+            },
+            "desm:spineTerm": {
+                "@id": "https://swan.desm.staging.c66.me/resources/terms/Inferred+Competency"
+            }
+        }, {
+            "@id": "ceasn:inferredCompetency",
+            "@type": "rdf:Property",
+            "desm:sourceURI": {
+                "@id": "ceasn:inferredCompetency"
+            },
+            "rdfs:subPropertyOf": {
+                "@id": null
+            },
+            "desm:valueSpace": {
+                "@id": null
+            },
+            "rdfs:label": "Inferred Competency",
+            "rdfs:comment": "Competency deduced or arrive at by reasoning on the competency being described.",
+            "rdfs:domain": {
+                "@id": "ceasn:Competency"
+            },
+            "rdfs:range": {
+                "@id": "ceasn:Competency"
+            }
+        }, {
+            "@id": "ceasn:inferredCompetency",
+            "@type": "rdf:Property",
+            "desm:sourceURI": {
+                "@id": "ceasn:inferredCompetency"
+            },
+            "rdfs:subPropertyOf": {
+                "@id": null
+            },
+            "desm:valueSpace": {
+                "@id": null
+            },
+            "rdfs:label": "Inferred Competency",
+            "rdfs:comment": "Competency deduced or arrive at by reasoning on the competency being described.",
+            "rdfs:domain": {
+                "@id": "ceasn:Competency"
+            },
+            "rdfs:range": {
+                "@id": "ceasn:Competency"
+            }
+        }, {
+            "@id": "http://desmsolutions.org/TermMapping/2207",
+            "@type": "desm:TermMapping",
+            "dcterms:isPartOf": {
+                "@id": "http://desmsolutions.org/TermMapping/165"
+            },
+            "desm:comment": null,
+            "desm:mappedterm": [
+                {
+                    "@id": "https://swan.desm.staging.c66.me/resources/terms/Is+Child+Of"
+                }
+            ],
+            "desm:mappingPredicate": {
+                "@id": "https://swan.desm.staging.c66.me/resources/predicates/Identical"
+            },
+            "desm:spineTerm": {
+                "@id": "https://swan.desm.staging.c66.me/resources/terms/Is+Child+Of"
+            }
+        }, {
+            "@id": "ceasn:isChildOf",
+            "@type": "rdf:Property",
+            "desm:sourceURI": {
+                "@id": "ceasn:isChildOf"
+            },
+            "rdfs:subPropertyOf": {
+                "@id": "dc:relation"
+            },
+            "desm:valueSpace": {
+                "@id": null
+            },
+            "rdfs:label": "Is Child Of",
+            "rdfs:comment": "The referenced resource is higher in some arbitrary hierarchy than this resource.",
+            "rdfs:domain": {
+                "@id": "ceasn:Competency"
+            },
+            "rdfs:range": {
+                "@id": "ceasn:Competency"
+            }
+        }, {
+            "@id": "ceasn:isChildOf",
+            "@type": "rdf:Property",
+            "desm:sourceURI": {
+                "@id": "ceasn:isChildOf"
+            },
+            "rdfs:subPropertyOf": {
+                "@id": "dc:relation"
+            },
+            "desm:valueSpace": {
+                "@id": null
+            },
+            "rdfs:label": "Is Child Of",
+            "rdfs:comment": "The referenced resource is higher in some arbitrary hierarchy than this resource.",
+            "rdfs:domain": {
+                "@id": "ceasn:Competency"
+            },
+            "rdfs:range": {
+                "@id": "ceasn:Competency"
+            }
+        }, {
+            "@id": "http://desmsolutions.org/TermMapping/2208",
+            "@type": "desm:TermMapping",
+            "dcterms:isPartOf": {
+                "@id": "http://desmsolutions.org/TermMapping/165"
+            },
+            "desm:comment": null,
+            "desm:mappedterm": [
+                {
+                    "@id": "https://swan.desm.staging.c66.me/resources/terms/Is+Part+Of"
+                }
+            ],
+            "desm:mappingPredicate": {
+                "@id": "https://swan.desm.staging.c66.me/resources/predicates/Identical"
+            },
+            "desm:spineTerm": {
+                "@id": "https://swan.desm.staging.c66.me/resources/terms/Is+Part+Of"
+            }
+        }, {
+            "@id": "ceasn:isPartOf",
+            "@type": "rdf:Property",
+            "desm:sourceURI": {
+                "@id": "ceasn:isPartOf"
+            },
+            "rdfs:subPropertyOf": {
+                "@id": "dc:relation"
+            },
+            "desm:valueSpace": {
+                "@id": null
+            },
+            "rdfs:label": "Is Part Of",
+            "rdfs:comment": "Competency framework that this competency is a part of.",
+            "rdfs:domain": {
+                "@id": "ceasn:Competency"
+            },
+            "rdfs:range": {
+                "@id": "ceasn:CompetencyFramework"
+            }
+        }, {
+            "@id": "ceasn:isPartOf",
+            "@type": "rdf:Property",
+            "desm:sourceURI": {
+                "@id": "ceasn:isPartOf"
+            },
+            "rdfs:subPropertyOf": {
+                "@id": "dc:relation"
+            },
+            "desm:valueSpace": {
+                "@id": null
+            },
+            "rdfs:label": "Is Part Of",
+            "rdfs:comment": "Competency framework that this competency is a part of.",
+            "rdfs:domain": {
+                "@id": "ceasn:Competency"
+            },
+            "rdfs:range": {
+                "@id": "ceasn:CompetencyFramework"
+            }
+        }, {
+            "@id": "http://desmsolutions.org/TermMapping/2209",
+            "@type": "desm:TermMapping",
+            "dcterms:isPartOf": {
+                "@id": "http://desmsolutions.org/TermMapping/165"
+            },
+            "desm:comment": null,
+            "desm:mappedterm": [
+                {
+                    "@id": "https://swan.desm.staging.c66.me/resources/terms/Is+Top+Child+Of"
+                }
+            ],
+            "desm:mappingPredicate": {
+                "@id": "https://swan.desm.staging.c66.me/resources/predicates/Identical"
+            },
+            "desm:spineTerm": {
+                "@id": "https://swan.desm.staging.c66.me/resources/terms/Is+Top+Child+Of"
+            }
+        }, {
+            "@id": "ceasn:isTopChildOf",
+            "@type": "rdf:Property",
+            "desm:sourceURI": {
+                "@id": "ceasn:isTopChildOf"
+            },
+            "rdfs:subPropertyOf": {
+                "@id": "ceasn:isChildOf"
+            },
+            "desm:valueSpace": {
+                "@id": null
+            },
+            "rdfs:label": "Is Top Child Of",
+            "rdfs:comment": "Indicates that this competency is at the top of some arbitrary hierarchy.",
+            "rdfs:domain": {
+                "@id": "ceasn:Competency"
+            },
+            "rdfs:range": {
+                "@id": "ceasn:CompetencyFramework"
+            }
+        }, {
+            "@id": "ceasn:isTopChildOf",
+            "@type": "rdf:Property",
+            "desm:sourceURI": {
+                "@id": "ceasn:isTopChildOf"
+            },
+            "rdfs:subPropertyOf": {
+                "@id": "ceasn:isChildOf"
+            },
+            "desm:valueSpace": {
+                "@id": null
+            },
+            "rdfs:label": "Is Top Child Of",
+            "rdfs:comment": "Indicates that this competency is at the top of some arbitrary hierarchy.",
+            "rdfs:domain": {
+                "@id": "ceasn:Competency"
+            },
+            "rdfs:range": {
+                "@id": "ceasn:CompetencyFramework"
+            }
+        }, {
+            "@id": "http://desmsolutions.org/TermMapping/2210",
+            "@type": "desm:TermMapping",
+            "dcterms:isPartOf": {
+                "@id": "http://desmsolutions.org/TermMapping/165"
+            },
+            "desm:comment": null,
+            "desm:mappedterm": [
+                {
+                    "@id": "https://swan.desm.staging.c66.me/resources/terms/Is+Version+Of"
+                }
+            ],
+            "desm:mappingPredicate": {
+                "@id": "https://swan.desm.staging.c66.me/resources/predicates/Identical"
+            },
+            "desm:spineTerm": {
+                "@id": "https://swan.desm.staging.c66.me/resources/terms/Is+Version+Of"
+            }
+        }, {
+            "@id": "ceasn:isVersionOf",
+            "@type": "rdf:Property",
+            "desm:sourceURI": {
+                "@id": "ceasn:isVersionOf"
+            },
+            "rdfs:subPropertyOf": {
+                "@id": null
+            },
+            "desm:valueSpace": {
+                "@id": null
+            },
+            "rdfs:label": "Is Version Of",
+            "rdfs:comment": "A related competency of which this competency is a version, edition, or adaptation.",
+            "rdfs:domain": {
+                "@id": "ceasn:Competency"
+            },
+            "rdfs:range": {
+                "@id": "ceasn:Competency"
+            }
+        }, {
+            "@id": "ceasn:isVersionOf",
+            "@type": "rdf:Property",
+            "desm:sourceURI": {
+                "@id": "ceasn:isVersionOf"
+            },
+            "rdfs:subPropertyOf": {
+                "@id": null
+            },
+            "desm:valueSpace": {
+                "@id": null
+            },
+            "rdfs:label": "Is Version Of",
+            "rdfs:comment": "A related competency of which this competency is a version, edition, or adaptation.",
+            "rdfs:domain": {
+                "@id": "ceasn:Competency"
+            },
+            "rdfs:range": {
+                "@id": "ceasn:Competency"
+            }
+        }, {
+            "@id": "http://desmsolutions.org/TermMapping/2211",
+            "@type": "desm:TermMapping",
+            "dcterms:isPartOf": {
+                "@id": "http://desmsolutions.org/TermMapping/165"
+            },
+            "desm:comment": null,
+            "desm:mappedterm": [
+                {
+                    "@id": "https://swan.desm.staging.c66.me/resources/terms/Knowledge+Embodied"
+                }
+            ],
+            "desm:mappingPredicate": {
+                "@id": "https://swan.desm.staging.c66.me/resources/predicates/Identical"
+            },
+            "desm:spineTerm": {
+                "@id": "https://swan.desm.staging.c66.me/resources/terms/Knowledge+Embodied"
+            }
+        }, {
+            "@id": "ceasn:knowledgeEmbodied",
+            "@type": "rdf:Property",
+            "desm:sourceURI": {
+                "@id": "ceasn:knowledgeEmbodied"
+            },
+            "rdfs:subPropertyOf": {
+                "@id": null
+            },
+            "desm:valueSpace": {
+                "@id": null
+            },
+            "rdfs:label": "Knowledge Embodied",
+            "rdfs:comment": "Body of information embodied either directly or indirectly in this resource.",
+            "rdfs:domain": {
+                "@id": "ceasn:Competency"
+            },
+            "rdfs:range": {
+                "@id": "xsd:anyURI"
+            }
+        }, {
+            "@id": "ceasn:knowledgeEmbodied",
+            "@type": "rdf:Property",
+            "desm:sourceURI": {
+                "@id": "ceasn:knowledgeEmbodied"
+            },
+            "rdfs:subPropertyOf": {
+                "@id": null
+            },
+            "desm:valueSpace": {
+                "@id": null
+            },
+            "rdfs:label": "Knowledge Embodied",
+            "rdfs:comment": "Body of information embodied either directly or indirectly in this resource.",
+            "rdfs:domain": {
+                "@id": "ceasn:Competency"
+            },
+            "rdfs:range": {
+                "@id": "xsd:anyURI"
+            }
+        }, {
+            "@id": "http://desmsolutions.org/TermMapping/2212",
+            "@type": "desm:TermMapping",
+            "dcterms:isPartOf": {
+                "@id": "http://desmsolutions.org/TermMapping/165"
+            },
+            "desm:comment": null,
+            "desm:mappedterm": [
+                {
+                    "@id": "https://swan.desm.staging.c66.me/resources/terms/List+ID"
+                }
+            ],
+            "desm:mappingPredicate": {
+                "@id": "https://swan.desm.staging.c66.me/resources/predicates/Identical"
+            },
+            "desm:spineTerm": {
+                "@id": "https://swan.desm.staging.c66.me/resources/terms/List+ID"
+            }
+        }, {
+            "@id": "ceasn:listID",
+            "@type": "rdf:Property",
+            "desm:sourceURI": {
+                "@id": "ceasn:listID"
+            },
+            "rdfs:subPropertyOf": {
+                "@id": "asn:listID"
+            },
+            "desm:valueSpace": {
+                "@id": null
+            },
+            "rdfs:label": "List ID",
+            "rdfs:comment": "An alphanumeric string indicating the relative position of a resource in an ordered list of resources such as \"A\", \"B\", or \"a\", \"b\", or \"I\", \"II\", or \"1\", \"2\".",
+            "rdfs:domain": {
+                "@id": "ceasn:Competency"
+            },
+            "rdfs:range": {
+                "@id": "xsd:string"
+            }
+        }, {
+            "@id": "ceasn:listID",
+            "@type": "rdf:Property",
+            "desm:sourceURI": {
+                "@id": "ceasn:listID"
+            },
+            "rdfs:subPropertyOf": {
+                "@id": "asn:listID"
+            },
+            "desm:valueSpace": {
+                "@id": null
+            },
+            "rdfs:label": "List ID",
+            "rdfs:comment": "An alphanumeric string indicating the relative position of a resource in an ordered list of resources such as \"A\", \"B\", or \"a\", \"b\", or \"I\", \"II\", or \"1\", \"2\".",
+            "rdfs:domain": {
+                "@id": "ceasn:Competency"
+            },
+            "rdfs:range": {
+                "@id": "xsd:string"
+            }
+        }, {
+            "@id": "http://desmsolutions.org/TermMapping/2213",
+            "@type": "desm:TermMapping",
+            "dcterms:isPartOf": {
+                "@id": "http://desmsolutions.org/TermMapping/165"
+            },
+            "desm:comment": null,
+            "desm:mappedterm": [
+                {
+                    "@id": "https://swan.desm.staging.c66.me/resources/terms/Major+Alignment"
+                }
+            ],
+            "desm:mappingPredicate": {
+                "@id": "https://swan.desm.staging.c66.me/resources/predicates/Identical"
+            },
+            "desm:spineTerm": {
+                "@id": "https://swan.desm.staging.c66.me/resources/terms/Major+Alignment"
+            }
+        }, {
+            "@id": "ceasn:majorAlignment",
+            "@type": "rdf:Property",
+            "desm:sourceURI": {
+                "@id": "ceasn:majorAlignment"
+            },
+            "rdfs:subPropertyOf": {
+                "@id": null
+            },
+            "desm:valueSpace": {
+                "@id": null
+            },
+            "rdfs:label": "Major Alignment",
+            "rdfs:comment": "Major overlap of relevant concepts between this competency and the referenced competency.",
+            "rdfs:domain": {
+                "@id": "ceasn:Competency"
+            },
+            "rdfs:range": {
+                "@id": "ceasn:Competency"
+            }
+        }, {
+            "@id": "ceasn:majorAlignment",
+            "@type": "rdf:Property",
+            "desm:sourceURI": {
+                "@id": "ceasn:majorAlignment"
+            },
+            "rdfs:subPropertyOf": {
+                "@id": null
+            },
+            "desm:valueSpace": {
+                "@id": null
+            },
+            "rdfs:label": "Major Alignment",
+            "rdfs:comment": "Major overlap of relevant concepts between this competency and the referenced competency.",
+            "rdfs:domain": {
+                "@id": "ceasn:Competency"
+            },
+            "rdfs:range": {
+                "@id": "ceasn:Competency"
+            }
+        }, {
+            "@id": "http://desmsolutions.org/TermMapping/2214",
+            "@type": "desm:TermMapping",
+            "dcterms:isPartOf": {
+                "@id": "http://desmsolutions.org/TermMapping/165"
+            },
+            "desm:comment": null,
+            "desm:mappedterm": [
+                {
+                    "@id": "https://swan.desm.staging.c66.me/resources/terms/Minor+Alignment"
+                }
+            ],
+            "desm:mappingPredicate": {
+                "@id": "https://swan.desm.staging.c66.me/resources/predicates/Identical"
+            },
+            "desm:spineTerm": {
+                "@id": "https://swan.desm.staging.c66.me/resources/terms/Minor+Alignment"
+            }
+        }, {
+            "@id": "ceasn:minorAlignment",
+            "@type": "rdf:Property",
+            "desm:sourceURI": {
+                "@id": "ceasn:minorAlignment"
+            },
+            "rdfs:subPropertyOf": {
+                "@id": null
+            },
+            "desm:valueSpace": {
+                "@id": null
+            },
+            "rdfs:label": "Minor Alignment",
+            "rdfs:comment": "Minor overlap of relevant concepts between this competency and the referenced competency.",
+            "rdfs:domain": {
+                "@id": "ceasn:Competency"
+            },
+            "rdfs:range": {
+                "@id": "ceasn:Competency"
+            }
+        }, {
+            "@id": "ceasn:minorAlignment",
+            "@type": "rdf:Property",
+            "desm:sourceURI": {
+                "@id": "ceasn:minorAlignment"
+            },
+            "rdfs:subPropertyOf": {
+                "@id": null
+            },
+            "desm:valueSpace": {
+                "@id": null
+            },
+            "rdfs:label": "Minor Alignment",
+            "rdfs:comment": "Minor overlap of relevant concepts between this competency and the referenced competency.",
+            "rdfs:domain": {
+                "@id": "ceasn:Competency"
+            },
+            "rdfs:range": {
+                "@id": "ceasn:Competency"
+            }
+        }, {
+            "@id": "http://desmsolutions.org/TermMapping/2215",
+            "@type": "desm:TermMapping",
+            "dcterms:isPartOf": {
+                "@id": "http://desmsolutions.org/TermMapping/165"
+            },
+            "desm:comment": null,
+            "desm:mappedterm": [
+                {
+                    "@id": "https://swan.desm.staging.c66.me/resources/terms/Narrow+Alignment"
+                }
+            ],
+            "desm:mappingPredicate": {
+                "@id": "https://swan.desm.staging.c66.me/resources/predicates/Identical"
+            },
+            "desm:spineTerm": {
+                "@id": "https://swan.desm.staging.c66.me/resources/terms/Narrow+Alignment"
+            }
+        }, {
+            "@id": "ceasn:narrowAlignment",
+            "@type": "rdf:Property",
+            "desm:sourceURI": {
+                "@id": "ceasn:narrowAlignment"
+            },
+            "rdfs:subPropertyOf": {
+                "@id": null
+            },
+            "desm:valueSpace": {
+                "@id": null
+            },
+            "rdfs:label": "Narrow Alignment",
+            "rdfs:comment": "This competency covers all of the relevant concepts in the referenced competency as well as relevant concepts not found in the referenced competency.",
+            "rdfs:domain": {
+                "@id": "ceasn:Competency"
+            },
+            "rdfs:range": {
+                "@id": "ceasn:Competency"
+            }
+        }, {
+            "@id": "ceasn:narrowAlignment",
+            "@type": "rdf:Property",
+            "desm:sourceURI": {
+                "@id": "ceasn:narrowAlignment"
+            },
+            "rdfs:subPropertyOf": {
+                "@id": null
+            },
+            "desm:valueSpace": {
+                "@id": null
+            },
+            "rdfs:label": "Narrow Alignment",
+            "rdfs:comment": "This competency covers all of the relevant concepts in the referenced competency as well as relevant concepts not found in the referenced competency.",
+            "rdfs:domain": {
+                "@id": "ceasn:Competency"
+            },
+            "rdfs:range": {
+                "@id": "ceasn:Competency"
+            }
+        }, {
+            "@id": "http://desmsolutions.org/TermMapping/2216",
+            "@type": "desm:TermMapping",
+            "dcterms:isPartOf": {
+                "@id": "http://desmsolutions.org/TermMapping/165"
+            },
+            "desm:comment": null,
+            "desm:mappedterm": [
+                {
+                    "@id": "https://swan.desm.staging.c66.me/resources/terms/Prerequisite+Alignment"
+                }
+            ],
+            "desm:mappingPredicate": {
+                "@id": "https://swan.desm.staging.c66.me/resources/predicates/Identical"
+            },
+            "desm:spineTerm": {
+                "@id": "https://swan.desm.staging.c66.me/resources/terms/Prerequisite+Alignment"
+            }
+        }, {
+            "@id": "ceasn:prerequisiteAlignment",
+            "@type": "rdf:Property",
+            "desm:sourceURI": {
+                "@id": "ceasn:prerequisiteAlignment"
+            },
+            "rdfs:subPropertyOf": {
+                "@id": null
+            },
+            "desm:valueSpace": {
+                "@id": null
+            },
+            "rdfs:label": "Prerequisite Alignment",
+            "rdfs:comment": "The referenced resource is a prerequisite to this resource.",
+            "rdfs:domain": {
+                "@id": "ceasn:Competency"
+            },
+            "rdfs:range": {
+                "@id": "ceasn:Competency"
+            }
+        }, {
+            "@id": "ceasn:prerequisiteAlignment",
+            "@type": "rdf:Property",
+            "desm:sourceURI": {
+                "@id": "ceasn:prerequisiteAlignment"
+            },
+            "rdfs:subPropertyOf": {
+                "@id": null
+            },
+            "desm:valueSpace": {
+                "@id": null
+            },
+            "rdfs:label": "Prerequisite Alignment",
+            "rdfs:comment": "The referenced resource is a prerequisite to this resource.",
+            "rdfs:domain": {
+                "@id": "ceasn:Competency"
+            },
+            "rdfs:range": {
+                "@id": "ceasn:Competency"
+            }
+        }, {
+            "@id": "http://desmsolutions.org/TermMapping/2217",
+            "@type": "desm:TermMapping",
+            "dcterms:isPartOf": {
+                "@id": "http://desmsolutions.org/TermMapping/165"
+            },
+            "desm:comment": null,
+            "desm:mappedterm": [
+                {
+                    "@id": "https://swan.desm.staging.c66.me/resources/terms/Should+Index"
+                }
+            ],
+            "desm:mappingPredicate": {
+                "@id": "https://swan.desm.staging.c66.me/resources/predicates/Identical"
+            },
+            "desm:spineTerm": {
+                "@id": "https://swan.desm.staging.c66.me/resources/terms/Should+Index"
+            }
+        }, {
+            "@id": "ceasn:shouldIndex",
+            "@type": "rdf:Property",
+            "desm:sourceURI": {
+                "@id": "ceasn:shouldIndex"
+            },
+            "rdfs:subPropertyOf": {
+                "@id": null
+            },
+            "desm:valueSpace": {
+                "@id": null
+            },
+            "rdfs:label": "Should Index",
+            "rdfs:comment": "Indicates whether correlators should or should not assign the competency during correlation.",
+            "rdfs:domain": {
+                "@id": "ceasn:Competency"
+            },
+            "rdfs:range": {
+                "@id": "xsd:boolean"
+            }
+        }, {
+            "@id": "ceasn:shouldIndex",
+            "@type": "rdf:Property",
+            "desm:sourceURI": {
+                "@id": "ceasn:shouldIndex"
+            },
+            "rdfs:subPropertyOf": {
+                "@id": null
+            },
+            "desm:valueSpace": {
+                "@id": null
+            },
+            "rdfs:label": "Should Index",
+            "rdfs:comment": "Indicates whether correlators should or should not assign the competency during correlation.",
+            "rdfs:domain": {
+                "@id": "ceasn:Competency"
+            },
+            "rdfs:range": {
+                "@id": "xsd:boolean"
+            }
+        }, {
+            "@id": "http://desmsolutions.org/TermMapping/2218",
+            "@type": "desm:TermMapping",
+            "dcterms:isPartOf": {
+                "@id": "http://desmsolutions.org/TermMapping/165"
+            },
+            "desm:comment": null,
+            "desm:mappedterm": [
+                {
+                    "@id": "https://swan.desm.staging.c66.me/resources/terms/Skill+Embodied"
+                }
+            ],
+            "desm:mappingPredicate": {
+                "@id": "https://swan.desm.staging.c66.me/resources/predicates/Identical"
+            },
+            "desm:spineTerm": {
+                "@id": "https://swan.desm.staging.c66.me/resources/terms/Skill+Embodied"
+            }
+        }, {
+            "@id": "ceasn:skillEmbodied",
+            "@type": "rdf:Property",
+            "desm:sourceURI": {
+                "@id": "ceasn:skillEmbodied"
+            },
+            "rdfs:subPropertyOf": {
+                "@id": null
+            },
+            "desm:valueSpace": {
+                "@id": null
+            },
+            "rdfs:label": "Skill Embodied",
+            "rdfs:comment": "Ability to apply knowledge and use know-how to complete tasks and solve problems including types or categories of developed proficiency or dexterity in mental operations and physical processes is embodied either directly or indirectly in this resource.",
+            "rdfs:domain": {
+                "@id": "ceasn:Competency"
+            },
+            "rdfs:range": {
+                "@id": "xsd:anyURI"
+            }
+        }, {
+            "@id": "ceasn:skillEmbodied",
+            "@type": "rdf:Property",
+            "desm:sourceURI": {
+                "@id": "ceasn:skillEmbodied"
+            },
+            "rdfs:subPropertyOf": {
+                "@id": null
+            },
+            "desm:valueSpace": {
+                "@id": null
+            },
+            "rdfs:label": "Skill Embodied",
+            "rdfs:comment": "Ability to apply knowledge and use know-how to complete tasks and solve problems including types or categories of developed proficiency or dexterity in mental operations and physical processes is embodied either directly or indirectly in this resource.",
+            "rdfs:domain": {
+                "@id": "ceasn:Competency"
+            },
+            "rdfs:range": {
+                "@id": "xsd:anyURI"
+            }
+        }, {
+            "@id": "http://desmsolutions.org/TermMapping/2219",
+            "@type": "desm:TermMapping",
+            "dcterms:isPartOf": {
+                "@id": "http://desmsolutions.org/TermMapping/165"
+            },
+            "desm:comment": null,
+            "desm:mappedterm": [
+                {
+                    "@id": "https://swan.desm.staging.c66.me/resources/terms/Source+Documentation"
+                }
+            ],
+            "desm:mappingPredicate": {
+                "@id": "https://swan.desm.staging.c66.me/resources/predicates/Identical"
+            },
+            "desm:spineTerm": {
+                "@id": "https://swan.desm.staging.c66.me/resources/terms/Source+Documentation"
+            }
+        }, {
+            "@id": "ceasn:sourceDocumentation",
+            "@type": "rdf:Property",
+            "desm:sourceURI": {
+                "@id": "ceasn:sourceDocumentation"
+            },
+            "rdfs:subPropertyOf": {
+                "@id": null
+            },
+            "desm:valueSpace": {
+                "@id": null
+            },
+            "rdfs:label": "Source Documentation",
+            "rdfs:comment": "Human-readable information resource other than a competency framework from which this competency was generated or derived by humans or machines.",
+            "rdfs:domain": {
+                "@id": "ceasn:Competency"
+            },
+            "rdfs:range": {
+                "@id": "xsd:anyURI"
+            }
+        }, {
+            "@id": "ceasn:sourceDocumentation",
+            "@type": "rdf:Property",
+            "desm:sourceURI": {
+                "@id": "ceasn:sourceDocumentation"
+            },
+            "rdfs:subPropertyOf": {
+                "@id": null
+            },
+            "desm:valueSpace": {
+                "@id": null
+            },
+            "rdfs:label": "Source Documentation",
+            "rdfs:comment": "Human-readable information resource other than a competency framework from which this competency was generated or derived by humans or machines.",
+            "rdfs:domain": {
+                "@id": "ceasn:Competency"
+            },
+            "rdfs:range": {
+                "@id": "xsd:anyURI"
+            }
+        }, {
+            "@id": "http://desmsolutions.org/TermMapping/2220",
+            "@type": "desm:TermMapping",
+            "dcterms:isPartOf": {
+                "@id": "http://desmsolutions.org/TermMapping/165"
+            },
+            "desm:comment": null,
+            "desm:mappedterm": [
+                {
+                    "@id": "https://swan.desm.staging.c66.me/resources/terms/Substantiating+Competency+Framework"
+                }
+            ],
+            "desm:mappingPredicate": {
+                "@id": "https://swan.desm.staging.c66.me/resources/predicates/Identical"
+            },
+            "desm:spineTerm": {
+                "@id": "https://swan.desm.staging.c66.me/resources/terms/Substantiating+Competency+Framework"
+            }
+        }, {
+            "@id": "ceasn:substantiatingCompetencyFramework",
+            "@type": "rdf:Property",
+            "desm:sourceURI": {
+                "@id": "ceasn:substantiatingCompetencyFramework"
+            },
+            "rdfs:subPropertyOf": {
+                "@id": "ceasn:substantiatingResource"
+            },
+            "desm:valueSpace": {
+                "@id": null
+            },
+            "rdfs:label": "Substantiating Competency Framework",
+            "rdfs:comment": "Aspects of the referenced Competency Framework provide some justification that the resource being described is useful.",
+            "rdfs:domain": {
+                "@id": "ceasn:Competency"
+            },
+            "rdfs:range": {
+                "@id": "ceasn:CompetencyFramework"
+            }
+        }, {
+            "@id": "ceasn:substantiatingCompetencyFramework",
+            "@type": "rdf:Property",
+            "desm:sourceURI": {
+                "@id": "ceasn:substantiatingCompetencyFramework"
+            },
+            "rdfs:subPropertyOf": {
+                "@id": "ceasn:substantiatingResource"
+            },
+            "desm:valueSpace": {
+                "@id": null
+            },
+            "rdfs:label": "Substantiating Competency Framework",
+            "rdfs:comment": "Aspects of the referenced Competency Framework provide some justification that the resource being described is useful.",
+            "rdfs:domain": {
+                "@id": "ceasn:Competency"
+            },
+            "rdfs:range": {
+                "@id": "ceasn:CompetencyFramework"
+            }
+        }, {
+            "@id": "http://desmsolutions.org/TermMapping/2221",
+            "@type": "desm:TermMapping",
+            "dcterms:isPartOf": {
+                "@id": "http://desmsolutions.org/TermMapping/165"
+            },
+            "desm:comment": null,
+            "desm:mappedterm": [
+                {
+                    "@id": "https://swan.desm.staging.c66.me/resources/terms/Substantiating+Credential"
+                }
+            ],
+            "desm:mappingPredicate": {
+                "@id": "https://swan.desm.staging.c66.me/resources/predicates/Identical"
+            },
+            "desm:spineTerm": {
+                "@id": "https://swan.desm.staging.c66.me/resources/terms/Substantiating+Credential"
+            }
+        }, {
+            "@id": "ceasn:substantiatingCredential",
+            "@type": "rdf:Property",
+            "desm:sourceURI": {
+                "@id": "ceasn:substantiatingCredential"
+            },
+            "rdfs:subPropertyOf": {
+                "@id": "ceasn:substantiatingResource"
+            },
+            "desm:valueSpace": {
+                "@id": null
+            },
+            "rdfs:label": "Substantiating Credential",
+            "rdfs:comment": "Aspects of the referenced Credential provide some justification that the resource being described is useful.",
+            "rdfs:domain": {
+                "@id": "ceasn:Competency"
+            },
+            "rdfs:range": {
+                "@id": "ceterms:ApprenticeshipCertificate"
+            }
+        }, {
+            "@id": "ceasn:substantiatingCredential",
+            "@type": "rdf:Property",
+            "desm:sourceURI": {
+                "@id": "ceasn:substantiatingCredential"
+            },
+            "rdfs:subPropertyOf": {
+                "@id": "ceasn:substantiatingResource"
+            },
+            "desm:valueSpace": {
+                "@id": null
+            },
+            "rdfs:label": "Substantiating Credential",
+            "rdfs:comment": "Aspects of the referenced Credential provide some justification that the resource being described is useful.",
+            "rdfs:domain": {
+                "@id": "ceasn:Competency"
+            },
+            "rdfs:range": {
+                "@id": "ceterms:ApprenticeshipCertificate"
+            }
+        }, {
+            "@id": "http://desmsolutions.org/TermMapping/2222",
+            "@type": "desm:TermMapping",
+            "dcterms:isPartOf": {
+                "@id": "http://desmsolutions.org/TermMapping/165"
+            },
+            "desm:comment": null,
+            "desm:mappedterm": [
+                {
+                    "@id": "https://swan.desm.staging.c66.me/resources/terms/Substantiating+Job"
+                }
+            ],
+            "desm:mappingPredicate": {
+                "@id": "https://swan.desm.staging.c66.me/resources/predicates/Identical"
+            },
+            "desm:spineTerm": {
+                "@id": "https://swan.desm.staging.c66.me/resources/terms/Substantiating+Job"
+            }
+        }, {
+            "@id": "ceasn:substantiatingJob",
+            "@type": "rdf:Property",
+            "desm:sourceURI": {
+                "@id": "ceasn:substantiatingJob"
+            },
+            "rdfs:subPropertyOf": {
+                "@id": "ceasn:substantiatingResource"
+            },
+            "desm:valueSpace": {
+                "@id": null
+            },
+            "rdfs:label": "Substantiating Job",
+            "rdfs:comment": "Aspects of the referenced Job provide some justification that the resource being described is useful.",
+            "rdfs:domain": {
+                "@id": "ceasn:Competency"
+            },
+            "rdfs:range": {
+                "@id": "ceterms:Job"
+            }
+        }, {
+            "@id": "ceasn:substantiatingJob",
+            "@type": "rdf:Property",
+            "desm:sourceURI": {
+                "@id": "ceasn:substantiatingJob"
+            },
+            "rdfs:subPropertyOf": {
+                "@id": "ceasn:substantiatingResource"
+            },
+            "desm:valueSpace": {
+                "@id": null
+            },
+            "rdfs:label": "Substantiating Job",
+            "rdfs:comment": "Aspects of the referenced Job provide some justification that the resource being described is useful.",
+            "rdfs:domain": {
+                "@id": "ceasn:Competency"
+            },
+            "rdfs:range": {
+                "@id": "ceterms:Job"
+            }
+        }, {
+            "@id": "http://desmsolutions.org/TermMapping/2223",
+            "@type": "desm:TermMapping",
+            "dcterms:isPartOf": {
+                "@id": "http://desmsolutions.org/TermMapping/165"
+            },
+            "desm:comment": null,
+            "desm:mappedterm": [
+                {
+                    "@id": "https://swan.desm.staging.c66.me/resources/terms/Substantiating+Occupation"
+                }
+            ],
+            "desm:mappingPredicate": {
+                "@id": "https://swan.desm.staging.c66.me/resources/predicates/Identical"
+            },
+            "desm:spineTerm": {
+                "@id": "https://swan.desm.staging.c66.me/resources/terms/Substantiating+Occupation"
+            }
+        }, {
+            "@id": "ceasn:substantiatingOccupation",
+            "@type": "rdf:Property",
+            "desm:sourceURI": {
+                "@id": "ceasn:substantiatingOccupation"
+            },
+            "rdfs:subPropertyOf": {
+                "@id": "ceasn:substantiatingResource"
+            },
+            "desm:valueSpace": {
+                "@id": null
+            },
+            "rdfs:label": "Substantiating Occupation",
+            "rdfs:comment": "Aspects of the referenced Occupation provide some justification that the resource being described is useful.",
+            "rdfs:domain": {
+                "@id": "ceasn:Competency"
+            },
+            "rdfs:range": {
+                "@id": "ceterms:Occupation"
+            }
+        }, {
+            "@id": "ceasn:substantiatingOccupation",
+            "@type": "rdf:Property",
+            "desm:sourceURI": {
+                "@id": "ceasn:substantiatingOccupation"
+            },
+            "rdfs:subPropertyOf": {
+                "@id": "ceasn:substantiatingResource"
+            },
+            "desm:valueSpace": {
+                "@id": null
+            },
+            "rdfs:label": "Substantiating Occupation",
+            "rdfs:comment": "Aspects of the referenced Occupation provide some justification that the resource being described is useful.",
+            "rdfs:domain": {
+                "@id": "ceasn:Competency"
+            },
+            "rdfs:range": {
+                "@id": "ceterms:Occupation"
+            }
+        }, {
+            "@id": "http://desmsolutions.org/TermMapping/2224",
+            "@type": "desm:TermMapping",
+            "dcterms:isPartOf": {
+                "@id": "http://desmsolutions.org/TermMapping/165"
+            },
+            "desm:comment": null,
+            "desm:mappedterm": [
+                {
+                    "@id": "https://swan.desm.staging.c66.me/resources/terms/Substantiating+Organization"
+                }
+            ],
+            "desm:mappingPredicate": {
+                "@id": "https://swan.desm.staging.c66.me/resources/predicates/Identical"
+            },
+            "desm:spineTerm": {
+                "@id": "https://swan.desm.staging.c66.me/resources/terms/Substantiating+Organization"
+            }
+        }, {
+            "@id": "ceasn:substantiatingOrganization",
+            "@type": "rdf:Property",
+            "desm:sourceURI": {
+                "@id": "ceasn:substantiatingOrganization"
+            },
+            "rdfs:subPropertyOf": {
+                "@id": "ceasn:substantiatingResource"
+            },
+            "desm:valueSpace": {
+                "@id": null
+            },
+            "rdfs:label": "Substantiating Organization",
+            "rdfs:comment": "Aspects of the referenced Organization provide some justification that the resource being described is useful.",
+            "rdfs:domain": {
+                "@id": "ceasn:Competency"
+            },
+            "rdfs:range": {
+                "@id": "ceterms:CredentialOrganization"
+            }
+        }, {
+            "@id": "ceasn:substantiatingOrganization",
+            "@type": "rdf:Property",
+            "desm:sourceURI": {
+                "@id": "ceasn:substantiatingOrganization"
+            },
+            "rdfs:subPropertyOf": {
+                "@id": "ceasn:substantiatingResource"
+            },
+            "desm:valueSpace": {
+                "@id": null
+            },
+            "rdfs:label": "Substantiating Organization",
+            "rdfs:comment": "Aspects of the referenced Organization provide some justification that the resource being described is useful.",
+            "rdfs:domain": {
+                "@id": "ceasn:Competency"
+            },
+            "rdfs:range": {
+                "@id": "ceterms:CredentialOrganization"
+            }
+        }, {
+            "@id": "http://desmsolutions.org/TermMapping/2225",
+            "@type": "desm:TermMapping",
+            "dcterms:isPartOf": {
+                "@id": "http://desmsolutions.org/TermMapping/165"
+            },
+            "desm:comment": null,
+            "desm:mappedterm": [
+                {
+                    "@id": "https://swan.desm.staging.c66.me/resources/terms/Substantiating+Resource"
+                }
+            ],
+            "desm:mappingPredicate": {
+                "@id": "https://swan.desm.staging.c66.me/resources/predicates/Identical"
+            },
+            "desm:spineTerm": {
+                "@id": "https://swan.desm.staging.c66.me/resources/terms/Substantiating+Resource"
+            }
+        }, {
+            "@id": "ceasn:substantiatingResource",
+            "@type": "rdf:Property",
+            "desm:sourceURI": {
+                "@id": "ceasn:substantiatingResource"
+            },
+            "rdfs:subPropertyOf": {
+                "@id": null
+            },
+            "desm:valueSpace": {
+                "@id": null
+            },
+            "rdfs:label": "Substantiating Resource",
+            "rdfs:comment": "Aspects of the referenced resource provide some justification that the resource being described is useful.",
+            "rdfs:domain": {
+                "@id": "ceasn:Competency"
+            },
+            "rdfs:range": {
+                "@id": "xsd:anyURI"
+            }
+        }, {
+            "@id": "ceasn:substantiatingResource",
+            "@type": "rdf:Property",
+            "desm:sourceURI": {
+                "@id": "ceasn:substantiatingResource"
+            },
+            "rdfs:subPropertyOf": {
+                "@id": null
+            },
+            "desm:valueSpace": {
+                "@id": null
+            },
+            "rdfs:label": "Substantiating Resource",
+            "rdfs:comment": "Aspects of the referenced resource provide some justification that the resource being described is useful.",
+            "rdfs:domain": {
+                "@id": "ceasn:Competency"
+            },
+            "rdfs:range": {
+                "@id": "xsd:anyURI"
+            }
+        }, {
+            "@id": "http://desmsolutions.org/TermMapping/2226",
+            "@type": "desm:TermMapping",
+            "dcterms:isPartOf": {
+                "@id": "http://desmsolutions.org/TermMapping/165"
+            },
+            "desm:comment": null,
+            "desm:mappedterm": [
+                {
+                    "@id": "https://swan.desm.staging.c66.me/resources/terms/Substantiating+Task"
+                }
+            ],
+            "desm:mappingPredicate": {
+                "@id": "https://swan.desm.staging.c66.me/resources/predicates/Identical"
+            },
+            "desm:spineTerm": {
+                "@id": "https://swan.desm.staging.c66.me/resources/terms/Substantiating+Task"
+            }
+        }, {
+            "@id": "ceasn:substantiatingTask",
+            "@type": "rdf:Property",
+            "desm:sourceURI": {
+                "@id": "ceasn:substantiatingTask"
+            },
+            "rdfs:subPropertyOf": {
+                "@id": "ceasn:substantiatingResource"
+            },
+            "desm:valueSpace": {
+                "@id": null
+            },
+            "rdfs:label": "Substantiating Task",
+            "rdfs:comment": "Aspects of the referenced Task provide some justification that the resource being described is useful.",
+            "rdfs:domain": {
+                "@id": "ceasn:Competency"
+            },
+            "rdfs:range": {
+                "@id": "ceterms:Task"
+            }
+        }, {
+            "@id": "ceasn:substantiatingTask",
+            "@type": "rdf:Property",
+            "desm:sourceURI": {
+                "@id": "ceasn:substantiatingTask"
+            },
+            "rdfs:subPropertyOf": {
+                "@id": "ceasn:substantiatingResource"
+            },
+            "desm:valueSpace": {
+                "@id": null
+            },
+            "rdfs:label": "Substantiating Task",
+            "rdfs:comment": "Aspects of the referenced Task provide some justification that the resource being described is useful.",
+            "rdfs:domain": {
+                "@id": "ceasn:Competency"
+            },
+            "rdfs:range": {
+                "@id": "ceterms:Task"
+            }
+        }, {
+            "@id": "http://desmsolutions.org/TermMapping/2227",
+            "@type": "desm:TermMapping",
+            "dcterms:isPartOf": {
+                "@id": "http://desmsolutions.org/TermMapping/165"
+            },
+            "desm:comment": null,
+            "desm:mappedterm": [
+                {
+                    "@id": "https://swan.desm.staging.c66.me/resources/terms/Substantiating+Work+Role"
+                }
+            ],
+            "desm:mappingPredicate": {
+                "@id": "https://swan.desm.staging.c66.me/resources/predicates/Identical"
+            },
+            "desm:spineTerm": {
+                "@id": "https://swan.desm.staging.c66.me/resources/terms/Substantiating+Work+Role"
+            }
+        }, {
+            "@id": "ceasn:substantiatingWorkRole",
+            "@type": "rdf:Property",
+            "desm:sourceURI": {
+                "@id": "ceasn:substantiatingWorkRole"
+            },
+            "rdfs:subPropertyOf": {
+                "@id": "ceasn:substantiatingResource"
+            },
+            "desm:valueSpace": {
+                "@id": null
+            },
+            "rdfs:label": "Substantiating Work Role",
+            "rdfs:comment": "Aspects of the referenced Work Role provide some justification that the resource being described is useful.",
+            "rdfs:domain": {
+                "@id": "ceasn:Competency"
+            },
+            "rdfs:range": {
+                "@id": "ceterms:WorkRole"
+            }
+        }, {
+            "@id": "ceasn:substantiatingWorkRole",
+            "@type": "rdf:Property",
+            "desm:sourceURI": {
+                "@id": "ceasn:substantiatingWorkRole"
+            },
+            "rdfs:subPropertyOf": {
+                "@id": "ceasn:substantiatingResource"
+            },
+            "desm:valueSpace": {
+                "@id": null
+            },
+            "rdfs:label": "Substantiating Work Role",
+            "rdfs:comment": "Aspects of the referenced Work Role provide some justification that the resource being described is useful.",
+            "rdfs:domain": {
+                "@id": "ceasn:Competency"
+            },
+            "rdfs:range": {
+                "@id": "ceterms:WorkRole"
+            }
+        }, {
+            "@id": "http://desmsolutions.org/TermMapping/2228",
+            "@type": "desm:TermMapping",
+            "dcterms:isPartOf": {
+                "@id": "http://desmsolutions.org/TermMapping/165"
+            },
+            "desm:comment": null,
+            "desm:mappedterm": [
+                {
+                    "@id": "https://swan.desm.staging.c66.me/resources/terms/Task+Embodied"
+                }
+            ],
+            "desm:mappingPredicate": {
+                "@id": "https://swan.desm.staging.c66.me/resources/predicates/Identical"
+            },
+            "desm:spineTerm": {
+                "@id": "https://swan.desm.staging.c66.me/resources/terms/Task+Embodied"
+            }
+        }, {
+            "@id": "ceasn:taskEmbodied",
+            "@type": "rdf:Property",
+            "desm:sourceURI": {
+                "@id": "ceasn:taskEmbodied"
+            },
+            "rdfs:subPropertyOf": {
+                "@id": null
+            },
+            "desm:valueSpace": {
+                "@id": null
+            },
+            "rdfs:label": "Task Embodied",
+            "rdfs:comment": "Specifically defined piece of work embodied either directly or indirectly in this resource.",
+            "rdfs:domain": {
+                "@id": "ceasn:Competency"
+            },
+            "rdfs:range": {
+                "@id": "xsd:anyURI"
+            }
+        }, {
+            "@id": "ceasn:taskEmbodied",
+            "@type": "rdf:Property",
+            "desm:sourceURI": {
+                "@id": "ceasn:taskEmbodied"
+            },
+            "rdfs:subPropertyOf": {
+                "@id": null
+            },
+            "desm:valueSpace": {
+                "@id": null
+            },
+            "rdfs:label": "Task Embodied",
+            "rdfs:comment": "Specifically defined piece of work embodied either directly or indirectly in this resource.",
+            "rdfs:domain": {
+                "@id": "ceasn:Competency"
+            },
+            "rdfs:range": {
+                "@id": "xsd:anyURI"
+            }
+        }, {
+            "@id": "http://desmsolutions.org/TermMapping/2229",
+            "@type": "desm:TermMapping",
+            "dcterms:isPartOf": {
+                "@id": "http://desmsolutions.org/TermMapping/165"
+            },
+            "desm:comment": null,
+            "desm:mappedterm": [
+                {
+                    "@id": "https://swan.desm.staging.c66.me/resources/terms/Weight"
+                }
+            ],
+            "desm:mappingPredicate": {
+                "@id": "https://swan.desm.staging.c66.me/resources/predicates/Identical"
+            },
+            "desm:spineTerm": {
+                "@id": "https://swan.desm.staging.c66.me/resources/terms/Weight"
+            }
+        }, {
+            "@id": "ceasn:weight",
+            "@type": "rdf:Property",
+            "desm:sourceURI": {
+                "@id": "ceasn:weight"
+            },
+            "rdfs:subPropertyOf": {
+                "@id": null
+            },
+            "desm:valueSpace": {
+                "@id": null
+            },
+            "rdfs:label": "Weight",
+            "rdfs:comment": "An asserted measurement of the weight, degree, percent, or strength of a recommendation, requirement, or comparison.",
+            "rdfs:domain": {
+                "@id": "ceasn:Competency"
+            },
+            "rdfs:range": {
+                "@id": "xsd:float"
+            }
+        }, {
+            "@id": "ceasn:weight",
+            "@type": "rdf:Property",
+            "desm:sourceURI": {
+                "@id": "ceasn:weight"
+            },
+            "rdfs:subPropertyOf": {
+                "@id": null
+            },
+            "desm:valueSpace": {
+                "@id": null
+            },
+            "rdfs:label": "Weight",
+            "rdfs:comment": "An asserted measurement of the weight, degree, percent, or strength of a recommendation, requirement, or comparison.",
+            "rdfs:domain": {
+                "@id": "ceasn:Competency"
+            },
+            "rdfs:range": {
+                "@id": "xsd:float"
+            }
+        }
+    ]
+}
