@@ -17,8 +17,8 @@ module Brokerage
 
         render json: {
           search: {
-            competencies_count: search.competencies_count,
-            containers_count: search.containers_count,
+            competencies_count: search.total_competencies_count,
+            containers_count: search.total_containers_count,
             page: search.page,
             per_container: search.per_container,
             per_page: search.per_page,
