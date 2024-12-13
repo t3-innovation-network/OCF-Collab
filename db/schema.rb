@@ -10,12 +10,14 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.1].define(version: 2024_08_01_072944) do
+ActiveRecord::Schema[8.0].define(version: 2024_12_12_072051) do
   # These are extensions that must be enabled in order to support this database
+  enable_extension "btree_gin"
+  enable_extension "pg_catalog.plpgsql"
   enable_extension "pgcrypto"
-  enable_extension "plpgsql"
+  enable_extension "vector"
 
-  create_table "code_sets", id: :uuid, default: -> { "gen_random_uuid()" }, force: :cascade do |t|
+  create_table "code_sets", id: :uuid, default: -> { "public.gen_random_uuid()" }, force: :cascade do |t|
     t.string "external_id", null: false
     t.string "name", null: false
     t.datetime "created_at", null: false
@@ -23,7 +25,7 @@ ActiveRecord::Schema[7.1].define(version: 2024_08_01_072944) do
     t.index ["external_id"], name: "index_code_sets_on_external_id", unique: true
   end
 
-  create_table "codes", id: :uuid, default: -> { "gen_random_uuid()" }, force: :cascade do |t|
+  create_table "codes", id: :uuid, default: -> { "public.gen_random_uuid()" }, force: :cascade do |t|
     t.string "description"
     t.uuid "code_set_id", null: false
     t.string "name", null: false
@@ -34,7 +36,7 @@ ActiveRecord::Schema[7.1].define(version: 2024_08_01_072944) do
     t.index ["code_set_id"], name: "index_codes_on_code_set_id"
   end
 
-  create_table "competencies", id: :uuid, default: -> { "gen_random_uuid()" }, force: :cascade do |t|
+  create_table "competencies", id: :uuid, default: -> { "public.gen_random_uuid()" }, force: :cascade do |t|
     t.uuid "container_id", null: false
     t.text "competency_text", null: false
     t.text "comment"
@@ -45,11 +47,15 @@ ActiveRecord::Schema[7.1].define(version: 2024_08_01_072944) do
     t.string "competency_label"
     t.string "keywords", default: [], array: true
     t.string "html_url"
+    t.string "all_text", default: "", null: false
+    t.tsvector "all_text_tsv"
+    t.vector "all_text_embedding"
+    t.index ["all_text_tsv"], name: "index_competencies_on_all_text_tsv", using: :gin
     t.index ["container_id"], name: "index_competencies_on_container_id"
     t.index ["external_id"], name: "index_competencies_on_external_id", unique: true
   end
 
-  create_table "competency_contextualizing_objects", id: :uuid, default: -> { "gen_random_uuid()" }, force: :cascade do |t|
+  create_table "competency_contextualizing_objects", id: :uuid, default: -> { "public.gen_random_uuid()" }, force: :cascade do |t|
     t.uuid "competency_id", null: false
     t.uuid "contextualizing_object_id", null: false
     t.datetime "created_at", null: false
@@ -57,7 +63,7 @@ ActiveRecord::Schema[7.1].define(version: 2024_08_01_072944) do
     t.index ["competency_id", "contextualizing_object_id"], name: "index_competency_contextualizing_objects", unique: true
   end
 
-  create_table "contact_points", id: :uuid, default: -> { "gen_random_uuid()" }, force: :cascade do |t|
+  create_table "contact_points", id: :uuid, default: -> { "public.gen_random_uuid()" }, force: :cascade do |t|
     t.uuid "node_directory_id"
     t.string "email", null: false
     t.string "name"
@@ -67,7 +73,7 @@ ActiveRecord::Schema[7.1].define(version: 2024_08_01_072944) do
     t.index ["node_directory_id"], name: "index_contact_points_on_node_directory_id"
   end
 
-  create_table "containers", id: :uuid, default: -> { "gen_random_uuid()" }, force: :cascade do |t|
+  create_table "containers", id: :uuid, default: -> { "public.gen_random_uuid()" }, force: :cascade do |t|
     t.uuid "node_directory_id", null: false
     t.string "node_directory_s3_key", null: false
     t.string "external_id", null: false
@@ -90,7 +96,7 @@ ActiveRecord::Schema[7.1].define(version: 2024_08_01_072944) do
     t.index ["type"], name: "index_containers_on_type"
   end
 
-  create_table "contextualizing_object_codes", id: :uuid, default: -> { "gen_random_uuid()" }, force: :cascade do |t|
+  create_table "contextualizing_object_codes", id: :uuid, default: -> { "public.gen_random_uuid()" }, force: :cascade do |t|
     t.uuid "code_id", null: false
     t.uuid "contextualizing_object_id", null: false
     t.datetime "created_at", null: false
@@ -98,7 +104,7 @@ ActiveRecord::Schema[7.1].define(version: 2024_08_01_072944) do
     t.index ["code_id", "contextualizing_object_id"], name: "index_contextualizing_object_codes", unique: true
   end
 
-  create_table "contextualizing_objects", id: :uuid, default: -> { "gen_random_uuid()" }, force: :cascade do |t|
+  create_table "contextualizing_objects", id: :uuid, default: -> { "public.gen_random_uuid()" }, force: :cascade do |t|
     t.string "coded_notation"
     t.string "data_url", null: false
     t.string "description"
@@ -111,7 +117,7 @@ ActiveRecord::Schema[7.1].define(version: 2024_08_01_072944) do
     t.index ["type"], name: "index_contextualizing_objects_on_type"
   end
 
-  create_table "node_directories", id: :uuid, default: -> { "gen_random_uuid()" }, force: :cascade do |t|
+  create_table "node_directories", id: :uuid, default: -> { "public.gen_random_uuid()" }, force: :cascade do |t|
     t.string "name", null: false
     t.text "description"
     t.string "s3_bucket", null: false
