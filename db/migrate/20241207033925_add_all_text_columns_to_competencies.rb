@@ -1,8 +1,10 @@
 class AddAllTextColumnsToCompetencies < ActiveRecord::Migration[8.0]
   def change
     add_column :competencies, :all_text, :string, default: '', null: false
-    add_column :competencies, :all_text_embedding, :vector
+    add_column :competencies, :all_text_embedding, :vector, limit: 1_536
     add_column :competencies, :all_text_tsv, :tsvector
+    add_index :competencies, all_text, using: :gin, opclass: :gin_trgm_ops
+    add_index :competencies, :all_text_embedding, using: :hnsw, opclass: :vector_cosine_ops
     add_index :competencies, :all_text_tsv, using: :gin
 
     reversible do |dir|

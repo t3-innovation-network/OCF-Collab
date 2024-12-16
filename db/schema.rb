@@ -10,10 +10,11 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[8.0].define(version: 2024_12_12_072051) do
+ActiveRecord::Schema[8.0].define(version: 2024_12_07_033925) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "btree_gin"
   enable_extension "pg_catalog.plpgsql"
+  enable_extension "pg_trgm"
   enable_extension "pgcrypto"
   enable_extension "vector"
 
@@ -49,7 +50,8 @@ ActiveRecord::Schema[8.0].define(version: 2024_12_12_072051) do
     t.string "html_url"
     t.string "all_text", default: "", null: false
     t.tsvector "all_text_tsv"
-    t.vector "all_text_embedding"
+    t.vector "all_text_embedding", limit: 1536
+    t.index ["all_text_embedding"], name: "index_competencies_on_all_text_embedding", opclass: :vector_cosine_ops, using: :hnsw
     t.index ["all_text_tsv"], name: "index_competencies_on_all_text_tsv", using: :gin
     t.index ["container_id"], name: "index_competencies_on_container_id"
     t.index ["external_id"], name: "index_competencies_on_external_id", unique: true
