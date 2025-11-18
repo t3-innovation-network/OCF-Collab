@@ -1,4 +1,6 @@
 class Competency < ApplicationRecord
+  has_neighbors :all_text_embedding
+
   searchkick mappings: {
     properties: {
       competency_category: { type: "text" },
@@ -28,8 +30,18 @@ class Competency < ApplicationRecord
   validates :competency_text, presence: true
 
   delegate :attribution_name, :description, :external_id, :name, :type,
+           allow_nil: true,
            prefix: true,
            to: :container
+
+  def assign_all_text
+    self.all_text = [
+      competency_text,
+      container_name,
+      container_description,
+      container_attribution_name
+    ].join(' ').squish
+  end
 
   def search_data
     {

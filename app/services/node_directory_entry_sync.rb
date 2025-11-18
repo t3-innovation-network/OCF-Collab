@@ -1,15 +1,17 @@
 class NodeDirectoryEntrySync
   attr_reader :node_directory, :s3_key, :tracker
 
-  def initialize(node_directory:, s3_key:, tracker:)
+  def initialize(node_directory:, s3_key:, tracker: nil)
     @node_directory = node_directory
     @s3_key = s3_key
     @tracker = tracker
   end
 
   def sync!
-    tracker.pending_entries.delete(s3_key)
-    tracker.processed_container_ids << parsed_container[:url]
+    if tracker
+      tracker.pending_entries.delete(s3_key)
+      tracker.processed_container_ids << parsed_container[:url]
+    end
 
     update_contextualizing_objects!
     update_container!
@@ -82,55 +84,75 @@ class NodeDirectoryEntrySync
   end
 
   def update_codes!(parsed_categories)
+    code_sets = Set.new
+    codes = Set.new
+
     parsed_categories.map do |parsed_category|
       name = parsed_category[:name] || ""
       external_id = parsed_category[:in_code_set] || name
 
-      code_set = CodeSet
-        .create_with(name: external_id)
-        .find_or_create_by!(external_id:)
+      code_set = CodeSet.find_or_initialize_by(external_id:)
+      code_set.name = external_id
+      code_sets << code_set
 
-      code_set
+      code = code_set
         .codes
-        .create_with(
-          description: parsed_category[:description],
-          name:
-        )
-        .find_or_create_by!(value: parsed_category[:code_value])
+        .find_or_initialize_by(value: parsed_category[:code_value])
+      code.description = parsed_category[:description]
+      code.name = name
+      codes << code
     end
+
+    CodeSet.import!(code_sets.to_a, on_duplicate_key_update: :all)
+    Code.import!(codes.to_a, on_duplicate_key_update: :all)
+    codes
   end
 
   def update_competencies!
     container.competencies.delete_all
 
-    Parallel.each(parsed_container[:competencies]) do |parsed_competency|
+    competencies = []
+    competency_contextualizing_objects = []
+
+    parsed_container[:competencies].map do |parsed_competency|
       contextualizing_objects = ContextualizingObject.where(
         external_id: Array.wrap(parsed_competency[:contextualized_by])
       )
 
       external_id = parsed_competency[:id]
 
-      begin
-        container
-          .competencies
-          .create!(
-            comment: parsed_competency[:comment],
-            competency_category: parsed_competency[:competency_category],
-            competency_label: parsed_competency[:competency_label],
-            competency_text: parsed_competency[:competency_text],
-            contextualizing_objects:,
-            external_id:,
-            html_url: parsed_competency[:html_url],
-            keywords: parsed_competency[:keywords]
-          )
-      rescue => e
-        Airbrake.notify(
-          e,
-          competency_id: external_id,
-          container_id: container.id
+      competency = container
+        .competencies
+        .new(
+          comment: parsed_competency[:comment],
+          competency_category: parsed_competency[:competency_category],
+          competency_label: parsed_competency[:competency_label],
+          competency_text: parsed_competency[:competency_text],
+          contextualizing_objects:,
+          external_id:,
+          html_url: parsed_competency[:html_url],
+          keywords: parsed_competency[:keywords]
         )
+
+      competencies << competency
+
+      contextualizing_objects.each do |contextualizing_object|
+        competency_contextualizing_objects << competency
+          .competency_contextualizing_objects
+          .new(contextualizing_object:)
       end
     end
+
+    all_texts = competencies.map(&:assign_all_text)
+
+    TextEmbedder.new.embed(all_texts).each_with_index do |embedding, index|
+      competencies[index].all_text_embedding = embedding
+    end
+
+    Competency.import!(competencies, on_duplicate_key_update: :all)
+    CompetencyContextualizingObject.import!(competency_contextualizing_objects)
+  rescue => e
+    Airbrake.notify(e, container_id: container.id)
   end
 
   def update_container!
@@ -138,21 +160,25 @@ class NodeDirectoryEntrySync
   end
 
   def update_contextualizing_objects!
-    parsed_container[:contextualizing_objects].map do |parsed_contextualizing_object|
+    contextualizing_objects = Set.new
+
+    parsed_container[:contextualizing_objects].each do |parsed_contextualizing_object|
       external_id = parsed_contextualizing_object[:id]
       data_url = parsed_contextualizing_object[:data_url] || external_id
 
       contextualizing_object = ContextualizingObject
         .find_or_initialize_by(external_id:)
 
-      contextualizing_object.update!(
-        coded_notation: parsed_contextualizing_object[:coded_notation],
-        codes: update_codes!(parsed_contextualizing_object[:category]).compact,
-        data_url:,
-        description: parsed_contextualizing_object[:description],
-        name: parsed_contextualizing_object[:name] || "",
-        type: parsed_contextualizing_object[:type]
-      )
+      contextualizing_object.coded_notation = parsed_contextualizing_object[:coded_notation]
+      contextualizing_object.codes = update_codes!(parsed_contextualizing_object[:category]).compact
+      contextualizing_object.data_url = data_url
+      contextualizing_object.description = parsed_contextualizing_object[:description]
+      contextualizing_object.name = parsed_contextualizing_object[:name] || ""
+      contextualizing_object.type = parsed_contextualizing_object[:type]
+
+      contextualizing_objects << contextualizing_object
     end
+
+    ContextualizingObject.import!(contextualizing_objects.to_a, on_duplicate_key_update: :all)
   end
 end

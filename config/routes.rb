@@ -5,6 +5,8 @@ Rails.application.routes.draw do
 
   root to: "pages#empty"
 
+  match "*all" => "application#cors_preflight_check", via: [:options]
+
   use_doorkeeper do
     # it accepts :authorizations, :tokens, :token_info, :applications and :authorized_applications
     skip_controllers :applications, :authorized_applications
@@ -27,4 +29,10 @@ Rails.application.routes.draw do
       get :asset_file
     end
   end
+
+  get "codes" => "pages#codes", defaults: { format: :json }
+
+  match "providers" => "pages#providers", defaults: { format: :json }, via: %i[get post]
+
+  post "competency_search" => "competency_search#index", defaults: { format: :json }, via: %i[options post]
 end
