@@ -107,6 +107,38 @@
       },
       "providerNodeAgent": "http://t3-ocf-collab-pna-d2l-8872.c66.me/",
       "isPartOf": "https://example.org/ocfc/registryDirectory/a211fb8b-9203-48be-b3ce-21868099bae7"
-    }
+    },
+    {
+      "@id": "https://ocf-collab.org/registryEntry/786643e3-3fe2-4988-aa64-26a3f07f2e06",
+      "@type": "RegistryEntry",
+      "name": {
+        "en-us": "Ariel Engine Registry"
+      },
+      "description": {
+        "en-us": "Ariel Engine competency frameworks based on the CTDL-ASN metamodel."
+      },
+      "contactPoint": [
+        {
+          "@type": "schema:ContactPoint",
+          "name": "Ariel Ariel",
+          "email": "Ariel@Ariel.org",
+          "contactType": "Chief Technology Services Officer"
+        },
+        {
+          "@type": "schema:ContactPoint",
+          "name": "Ariel",
+          "email": "Ariel@Ariel.org",
+          "contactType": "Associate Solutions Architect"
+        }
+      ],
+      "registryLogo": "https://ocf-collab.github.io/scratch/registryLogos/CredEngine/logo@2x.png",
+      "s3": {
+        "bucketName": "ocn-ariel-registry",
+        "arn": "arn:aws:s3:::ocn-ariel-registry",
+        "bucketURL": "http://s3.amazonaws.com/ocn-ariel-registry/"
+      },
+      "providerNodeAgent": "http://t3-ocf-collab-pna-ce-8945.c66.me/",
+      "isPartOf": "https://example.org/ocfc/registryDirectory/a211fb8b-9203-48be-b3ce-21868099bae7"
+    }    
   ]
 }
